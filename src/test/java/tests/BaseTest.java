@@ -7,16 +7,16 @@ import org.testng.annotations.BeforeMethod;
 
 
 public class BaseTest {
-    @BeforeMethod
-    public void setUp() {
-        DriverBase.get().getDriver();
-    }
+	@BeforeMethod
+	public void setUp() {
+		DriverBase.get();
+	}
 
 
-    @AfterMethod()
-    public void tearDown() {
-        DriverBase.get().quitDriver(DriverBase.get().getDriver());
-    }
+	@AfterMethod
+	public void tearDown() {
+		DriverBase.get().quit();
+	}
 
 
 

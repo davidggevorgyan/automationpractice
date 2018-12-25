@@ -11,57 +11,48 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class DriverBase {
-    public static DriverBase get() {
-        return new DriverBase();
-    }
+	private static final String BROWSER = System.getProperty("selenium.browser", "chrome");
+	private static final String REMOTE = System.getProperty("selenium.remote", "false");
+	public static WebDriver driver;
+	private static ThreadLocal<WebDriver> driverThread = new ThreadLocal<>();
 
-    public WebDriver driver;
-    private static final String BROWSER = System.getProperty("selenium.browser", "chrome");
-    private static final String REMOTE = System.getProperty("selenium.remote", "false");
-    private static ThreadLocal<WebDriver> driverThread = new ThreadLocal<>();
+	public static WebDriver get() {
+		if (driverThread.get() == null) {
+			switch (BROWSER) {
+				case "chrome":
+					System.setProperty("webdriver.chrome.driver",
+							"./drivers/chromedriver-mac-64bit");
+					if (Boolean.valueOf(REMOTE)) {
+						driver = initRemoteDriver(DesiredCapabilities.chrome());
+					} else {
+						driver = new ChromeDriver();
+					}
+					driverThread.set(driver);
+					break;
 
-    public WebDriver getDriver() {
-        if (driverThread.get() == null) {
-            switch (BROWSER) {
-                case "chrome":
-                    System.setProperty("webdriver.chrome.driver",
-                            "./drivers/chromedriver-mac-64bit");
-                    if (Boolean.valueOf(REMOTE)) {
-                        driver = initRemoteDriver(DesiredCapabilities.chrome());
-                    } else {
-                        driver = new ChromeDriver();
-                    }
-                    driverThread.set(driver);
-                    break;
+				case "firefox":
+					System.setProperty("webdriver.gecko.driver",
+							"./drivers/geckodriver-mac-64bit");
+					if (Boolean.valueOf(REMOTE)) {
+						driver = initRemoteDriver(DesiredCapabilities.firefox());
+					} else {
+						driver = new FirefoxDriver();
+					}
+					driverThread.set(driver);
+					break;
+			}
+		}
+		return driverThread.get();
+	}
 
-                case "firefox":
-                    System.setProperty("webdriver.gecko.driver",
-                            "./drivers/geckodriver-mac-64bit");
-                    if (Boolean.valueOf(REMOTE)) {
-                        driver = initRemoteDriver(DesiredCapabilities.firefox());
-                    } else {
-                        driver = new FirefoxDriver();
-                    }
-                    driverThread.set(driver);
-                    break;
-            }
-        }
-        return driverThread.get();
-    }
+	public static RemoteWebDriver initRemoteDriver(DesiredCapabilities capability) {
+		RemoteWebDriver remoteDriver = null;
+		try {
+			remoteDriver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
 
-    public RemoteWebDriver initRemoteDriver(DesiredCapabilities capability) {
-        RemoteWebDriver remoteDriver = null;
-        try {
-            remoteDriver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
-
-        return remoteDriver;
-    }
-
-    public void quitDriver(WebDriver driver) {
-        driver.quit();
-        driverThread.remove();
-    }
+		return remoteDriver;
+	}
 }
