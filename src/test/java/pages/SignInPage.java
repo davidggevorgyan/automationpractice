@@ -4,6 +4,8 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import static org.testng.Assert.assertTrue;
+
 
 public class SignInPage extends BasePage {
 	@FindBy(id = "email")
@@ -31,10 +33,8 @@ public class SignInPage extends BasePage {
 	@FindBy(css = "#form_forgotpassword > fieldset > p > button")
 	private WebElement retrievePasswordButton;
 
-
-
 	public SignInPage() {
-		super("/index.php?controller=authentication&back=my-account");
+		super("index.php?controller=authentication&back=my-account");
 	}
 
 
@@ -68,13 +68,9 @@ public class SignInPage extends BasePage {
 		return isElementDisplayed(alertBarSuccess);
 	}
 
-	@Override
-	protected void load() {
-		//TODO implement this method
-	}
 
 	@Override
 	protected void isLoaded() throws Error {
-		//TODO implement this method
+		assertTrue(isElementDisplayed(signInButton));
 	}
 }

@@ -1,5 +1,7 @@
 # automationpractice
-http://automationpractice.com automation with TestNG, Selenium WebDriver, Zalenium, Jenkins, and Allure. All automation is done in Java
+http://automationpractice.com automation with:
+Maven, TestNG, Selenium WebDriver, Zalenium, Jenkins, and Allure. 
+All automation is done in Java
 
 References:
 * https://sqadays.com/en/talk/62825
