@@ -18,6 +18,21 @@ public class SignInPage extends BasePage {
 	@FindBy(className = "logout")
 	private WebElement signOutLink;
 
+	@FindBy(css = ".lost_password > a")
+	private WebElement forgotPasswordLink;
+
+	@FindBy(className = "alert-danger")
+	private WebElement alertBarDanger;
+
+	@FindBy(className = "alert-success")
+	private WebElement alertBarSuccess;
+
+
+	@FindBy(css = "#form_forgotpassword > fieldset > p > button")
+	private WebElement retrievePasswordButton;
+
+
+
 	public SignInPage() {
 		super("/index.php?controller=authentication&back=my-account");
 	}
@@ -27,6 +42,12 @@ public class SignInPage extends BasePage {
 		emailField.sendKeys(email);
 		passwordField.sendKeys(password);
 		click(signInButton);
+	}
+
+	public void forgotPasswordWithEmail(String email) {
+		click(forgotPasswordLink);
+		emailField.sendKeys(email);
+		click(retrievePasswordButton);
 	}
 
 
@@ -39,14 +60,21 @@ public class SignInPage extends BasePage {
 		return isElementDisplayed(signOutLink);
 	}
 
+	public boolean isAlertBarDangerDisplayed() {
+		return isElementDisplayed(alertBarDanger);
+	}
+
+	public boolean isAlertBarSuccessDisplayed() {
+		return isElementDisplayed(alertBarSuccess);
+	}
+
 	@Override
 	protected void load() {
-
+		//TODO implement this method
 	}
 
 	@Override
 	protected void isLoaded() throws Error {
-		// String url = super(driver).getCurrentUrl();
-		// assertTrue( url.endsWith("index.php?controller=authentication&back=my-account"),"Not on the issue entry page: " + url);
+		//TODO implement this method
 	}
 }
