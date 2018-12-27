@@ -71,6 +71,6 @@ public class SignInPage extends BasePage {
 
 	@Override
 	protected void isLoaded() throws Error {
-		assertTrue(isElementDisplayed(signInButton));
+		assertTrue(isElementDisplayed(signInButton), "The page load is failed");
 	}
 }

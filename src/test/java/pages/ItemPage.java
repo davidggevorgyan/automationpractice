@@ -37,6 +37,6 @@ public class ItemPage extends BasePage {
 
 	@Override
 	protected void isLoaded() throws Error {
-		assertTrue(isElementDisplayed(itemSection));
+		assertTrue(isElementDisplayed(itemSection), "The page load is failed");
 	}
 }

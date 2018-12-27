@@ -13,28 +13,28 @@ public class SignInTest extends BaseTest {
     public void signIn() {
 	    SignInPage signInPage = new SignInPage();
 	    signInPage.signInWithCredentials("d1@grr.la", "d1@grr.la");
-	    assertTrue(signInPage.isSignOutLinkDisplayed());
+	    assertTrue(signInPage.isSignOutLinkDisplayed(), "Sign out link was not displayed");
     }
 
 	@Test
 	public void forgotPassword() {
 		SignInPage signInPage = new SignInPage();
 		signInPage.forgotPasswordWithEmail("d1@grr.la");
-		assertTrue(signInPage.isAlertBarSuccessDisplayed());
+		assertTrue(signInPage.isAlertBarSuccessDisplayed(), "Success message was not displayed");
 	}
 
 	@Test
 	public void signInWithInvalidCredentials() {
 		SignInPage signInPage = new SignInPage();
 		signInPage.signInWithCredentials("a3@grr.la", "a3@grr.la");
-		assertTrue(signInPage.isAlertBarDangerDisplayed());
+		assertTrue(signInPage.isAlertBarDangerDisplayed(), "Error message was not displayed");
 	}
 
 	@Test
 	public void forgotPasswordWithInvalidCredentials() {
 		SignInPage signInPage = new SignInPage();
 		signInPage.forgotPasswordWithEmail("a3@grr.la");
-		assertTrue(signInPage.isAlertBarDangerDisplayed());
+		assertTrue(signInPage.isAlertBarDangerDisplayed(), "Error message was not displayed");
 	}
 
 
