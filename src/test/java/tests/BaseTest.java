@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 public class BaseTest {
 	@BeforeMethod
 	public void setUp() {
-		DriverBase.get();
+		DriverBase.get().manage().window().maximize();
 	}
 
 
