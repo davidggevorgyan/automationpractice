@@ -11,8 +11,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public abstract class BasePage extends LoadableComponent {
-	private static final String BASE_URL = "http://automationpractice.com/";
-	private static final Integer defaultTimeout = 5;
+	private static final String BASE_URL = System.getProperty("selenium.baseURL", "http://automationpractice.com/");
+	private static final Integer DEFAULT_TIMEOUT = Integer.parseInt(System.getProperty("selenium.defaultTimeout", "5"));
+
 	private String pageUrl;
 	private WebDriver driver;
 
@@ -35,7 +36,7 @@ public abstract class BasePage extends LoadableComponent {
 	}
 
 	void click(WebElement element) {
-		click(element, defaultTimeout);
+		click(element, DEFAULT_TIMEOUT);
 	}
 
 	void click(WebElement element, Integer timeout) {
@@ -44,7 +45,7 @@ public abstract class BasePage extends LoadableComponent {
 	}
 
 	boolean isElementDisplayed(WebElement element) {
-		return isElementDisplayed(element, defaultTimeout);
+		return isElementDisplayed(element, DEFAULT_TIMEOUT);
 	}
 
 	boolean isElementDisplayed(WebElement element, Integer timeout) {
