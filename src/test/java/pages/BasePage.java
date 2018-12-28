@@ -12,9 +12,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public abstract class BasePage extends LoadableComponent {
 	private static final String BASE_URL = "http://automationpractice.com/";
+	private static final Integer defaultTimeout = 5;
 	private String pageUrl;
 	private WebDriver driver;
-	private Integer defaultTimeout = 5;
+
 
 	BasePage(String pageUrl) {
 		this.pageUrl = pageUrl;
@@ -26,7 +27,11 @@ public abstract class BasePage extends LoadableComponent {
 
 	@Override
 	public void load() {
-		driver.get(BASE_URL + pageUrl);
+		if (pageUrl.contains("http")) {
+			driver.get(pageUrl);
+		} else {
+			driver.get(BASE_URL + pageUrl);
+		}
 	}
 
 	void click(WebElement element) {
