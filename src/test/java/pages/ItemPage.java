@@ -31,7 +31,6 @@ public class ItemPage extends BasePage {
 	}
 
 	public boolean isCheckoutFrameDisplayed() {
-		waitForElementToBeVisible(cartFrame);
 		return isElementDisplayed(cartFrame);
 	}
 

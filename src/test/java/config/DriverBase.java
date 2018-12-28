@@ -12,7 +12,7 @@ import java.net.URL;
 
 public class DriverBase {
 	private static final String BROWSER = System.getProperty("selenium.browser", "chrome");
-	private static final String REMOTE = System.getProperty("selenium.remote", "true");
+	private static final String REMOTE = System.getProperty("selenium.remote", "false");
 	private static WebDriver driver;
 	private static ThreadLocal<WebDriver> driverThread = new ThreadLocal<>();
 
