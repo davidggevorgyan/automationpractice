@@ -9,11 +9,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.LoadableComponent;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import static config.DriverBase.BASE_URL;
+import static config.DriverBase.DEFAULT_TIMEOUT;
+
 
 public abstract class BasePage extends LoadableComponent {
-	private static final String BASE_URL = System.getProperty("selenium.baseURL", "http://automationpractice.com/");
-	private static final Integer DEFAULT_TIMEOUT = Integer.parseInt(System.getProperty("selenium.defaultTimeout", "5"));
-
 	private String pageUrl;
 	private WebDriver driver;
 

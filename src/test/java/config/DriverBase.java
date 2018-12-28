@@ -13,6 +13,8 @@ import java.net.URL;
 public class DriverBase {
 	private static final String BROWSER = System.getProperty("selenium.browser", "chrome");
 	private static final String REMOTE = System.getProperty("selenium.remote", "false");
+	public static final String BASE_URL = System.getProperty("selenium.baseURL", "http://automationpractice.com/");
+	public static final Integer DEFAULT_TIMEOUT = Integer.parseInt(System.getProperty("selenium.defaultTimeout", "5"));
 	private static WebDriver driver;
 	private static ThreadLocal<WebDriver> driverThread = new ThreadLocal<>();
 
@@ -50,7 +52,7 @@ public class DriverBase {
 		driverThread.remove();
 	}
 
-	public static RemoteWebDriver initRemoteDriver(DesiredCapabilities capability) {
+	private static RemoteWebDriver initRemoteDriver(DesiredCapabilities capability) {
 		RemoteWebDriver remoteDriver = null;
 		try {
 			remoteDriver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
