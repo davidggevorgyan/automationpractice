@@ -18,8 +18,8 @@ services:
     command: >
       start --desiredContainers 2
             --maxDockerSeleniumContainers 8
-            --screenWidth 800 --screenHeight 600
-            --timeZone "Europe/Berlin"
+            --screenWidth 1920 --screenHeight 800
+            --timeZone "Africa/Abidjan"
             --videoRecordingEnabled true
             --sauceLabsEnabled false
             --browserStackEnabled false
@@ -28,9 +28,3 @@ services:
     environment:
       - HOST_UID
       - HOST_GID
-      - SAUCE_USERNAME
-      - SAUCE_ACCESS_KEY
-      - BROWSER_STACK_USER
-      - BROWSER_STACK_KEY
-      - TESTINGBOT_KEY
-      - TESTINGBOT_SECRET
