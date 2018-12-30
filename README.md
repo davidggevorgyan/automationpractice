@@ -1,11 +1,13 @@
-# automationpractice
-http://automationpractice.com automation with:
-
-Maven, TestNG, Selenium WebDriver, Zalenium, Jenkins, Allure, WebDriver Extensions, Log4j, Maven Surefire Plugin. 
-
+# http://automationpractice.com automation
+#### Following tools were used in this framework:
+Maven, TestNG, Selenium WebDriver, Zalenium, Jenkins, Allure, WebDriver Extensions, Log4j, Maven Surefire Plugin, and BrowserStack. 
 All automation is done in Java.
 
-References:
+####To run tests execute the following command:
+`mvn clean test -Dselenium.remote=true -Dselenium.host=LINK_GENERATED_IN_BROWSERSTACK`
+
+####References:
+* [Selenium Guidebook](https://seleniumguidebook.com)
 * [Easy Setup for Parallel Test Execution with Selenium Docker](https://sqadays.com/en/talk/62825)
 * [You dont need static driver or static methods](https://seleniumjava.com/2017/12/23/you-dont-need-static-driver-or-static-methods/)
 * [A Maven Plugin to manage, download and install drivers](https://github.com/webdriverextensions/webdriverextensions)
@@ -14,3 +16,5 @@ References:
 * [Parallel execution of multiple TestNG suites](https://rationaleemotions.wordpress.com/2016/03/29/parallel-execution-of-multiple-testng-suites/)
 * [A flexible and scalable container based Selenium Grid with video recording, live preview, basic auth & dashboard](https://opensource.zalando.com/zalenium/)
 * [Retry Failed Tests in TestNG](http://toolsqa.com/selenium-webdriver/retry-failed-tests-testng/)
+* [Selenium with Java. BrowserStack documentation](https://www.browserstack.com/automate/java)
+* [Retrieve test name on TestNG](https://stackoverflow.com/questions/8596632/retrieve-test-name-on-testng)
