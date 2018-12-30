@@ -13,8 +13,8 @@ public class ItemTest extends BaseTest {
 		assertTrue(itemPage.isCheckoutFrameDisplayed(), "Checkout popup was not displayed");
 	}
 
-	@Test
-	public void addItemToCart2() {
+	@Test(enabled = false)
+	public void exampleOfDisabledTest() {
 		ItemPage itemPage = new ItemPage();
 		itemPage.addItemToCart();
 		assertTrue(itemPage.isCheckoutFrameDisplayed(), "Checkout popup was not displayed");
