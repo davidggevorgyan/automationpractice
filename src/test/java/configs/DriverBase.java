@@ -1,4 +1,4 @@
-package config;
+package configs;
 
 
 import org.openqa.selenium.WebDriver;
@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -25,6 +26,7 @@ public class DriverBase {
 	public WebDriver getDriver() {
 		if (driverThread.get() == null) {
 			WebDriver driver;
+			EventFiringWebDriver eventDriver;
 			switch (BROWSER) {
 				case "chrome":
 					System.setProperty("webdriver.chrome.driver",
@@ -35,7 +37,7 @@ public class DriverBase {
 						driver = new ChromeDriver();
 					}
 					driverThread.set(driver);
-					driver.manage().window().maximize();
+					getDriver().manage().window().maximize();
 					break;
 
 				case "firefox":
@@ -47,10 +49,11 @@ public class DriverBase {
 						driver = new FirefoxDriver();
 					}
 					driverThread.set(driver);
-					driver.manage().window().maximize();
+					getDriver().manage().window().maximize();
 					break;
 			}
 		}
+
 		return driverThread.get();
 
 	}

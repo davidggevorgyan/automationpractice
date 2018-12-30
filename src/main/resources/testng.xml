@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Selenium Suite">
     <listeners>
-        <listener class-name="config.AnnotationTransformer"/>
+        <listener class-name="configs.TestNG.AnnotationTransformer"/>
     </listeners>
     <test name="Automationpractice Selenium Suite" parallel="methods" thread-count="2">
         <packages>

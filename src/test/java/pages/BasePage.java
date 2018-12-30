@@ -1,6 +1,6 @@
 package pages;
 
-import config.DriverBase;
+import configs.DriverBase;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,8 +9,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.LoadableComponent;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static config.DriverBase.BASE_URL;
-import static config.DriverBase.DEFAULT_TIMEOUT;
+import static configs.DriverBase.BASE_URL;
+import static configs.DriverBase.DEFAULT_TIMEOUT;
 
 
 public abstract class BasePage extends LoadableComponent {

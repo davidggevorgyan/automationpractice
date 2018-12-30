@@ -1,4 +1,4 @@
-package config;
+package configs.TestNG;
 
 import org.testng.IAnnotationTransformer;
 import org.testng.annotations.ITestAnnotation;
