@@ -17,13 +17,14 @@ public class DriverBase {
 	public static final Integer DEFAULT_TIMEOUT = Integer.parseInt(System.getProperty("selenium.defaultTimeout", "5"));
 	private static final String BROWSER = System.getProperty("selenium.browser", "chrome");
 	private static final String REMOTE = System.getProperty("selenium.remote", "false");
+	private static final String HOST = System.getProperty("selenium.host", "http://localhost:4444/wd/hub");
 	private static final ThreadLocal<WebDriver> driverThread = new ThreadLocal<>();
 
 	public static DriverBase get() {
 		return new DriverBase();
 	}
 
-	public WebDriver getDriver() {
+	public WebDriver getDriver(String testName) {
 		if (driverThread.get() == null) {
 			WebDriver driver;
 			EventFiringWebDriver eventDriver;
@@ -32,7 +33,16 @@ public class DriverBase {
 					System.setProperty("webdriver.chrome.driver",
 							"./drivers/chromedriver-mac-64bit");
 					if (Boolean.valueOf(REMOTE)) {
-						driver = initRemoteDriver(DesiredCapabilities.chrome());
+						DesiredCapabilities caps = new DesiredCapabilities();
+						caps.setCapability("browser", "Chrome");
+						caps.setCapability("browser_version", "71.0");
+						caps.setCapability("os", "Windows");
+						caps.setCapability("os_version", "10");
+						caps.setCapability("resolution", "1920x1080");
+						caps.setCapability("name", testName);
+						caps.setCapability("project", "automationpractice");
+
+						driver = initRemoteDriver(caps);
 					} else {
 						driver = new ChromeDriver();
 					}
@@ -44,7 +54,15 @@ public class DriverBase {
 					System.setProperty("webdriver.gecko.driver",
 							"./drivers/geckodriver-mac-64bit");
 					if (Boolean.valueOf(REMOTE)) {
-						driver = initRemoteDriver(DesiredCapabilities.firefox());
+						DesiredCapabilities caps = new DesiredCapabilities();
+						caps.setCapability("browser", "Firefox");
+						caps.setCapability("browser_version", "64.0");
+						caps.setCapability("os", "Windows");
+						caps.setCapability("os_version", "10");
+						caps.setCapability("resolution", "1920x1080");
+						caps.setCapability("name", testName);
+						caps.setCapability("project", "automationpractice");
+						driver = initRemoteDriver(caps);
 					} else {
 						driver = new FirefoxDriver();
 					}
@@ -58,10 +76,14 @@ public class DriverBase {
 
 	}
 
+	public WebDriver getDriver() {
+		return getDriver("Undefined test method");
+	}
+
 	private RemoteWebDriver initRemoteDriver(DesiredCapabilities capability) {
 		RemoteWebDriver remoteDriver = null;
 		try {
-			remoteDriver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
+			remoteDriver = new RemoteWebDriver(new URL(HOST), capability);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
