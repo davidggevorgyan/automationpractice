@@ -1,7 +1,6 @@
 package pages;
 
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -23,8 +22,8 @@ public class ItemPage extends BasePage {
 	private WebElement proceedToCheckoutButton;
 
 
-	public ItemPage(WebDriver driver) {
-		super(driver, "index.php?id_product=2&controller=product");
+	public ItemPage() {
+		super("index.php?id_product=2&controller=product");
 	}
 
 	public void addItemToCart() {

@@ -1,5 +1,6 @@
 package pages;
 
+import config.DriverBase;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,8 +9,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.LoadableComponent;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static tests.BaseTest.BASE_URL;
-import static tests.BaseTest.DEFAULT_TIMEOUT;
+import static config.DriverBase.BASE_URL;
+import static config.DriverBase.DEFAULT_TIMEOUT;
 
 
 public abstract class BasePage extends LoadableComponent {
@@ -17,9 +18,9 @@ public abstract class BasePage extends LoadableComponent {
 	private WebDriver driver;
 
 
-	BasePage(WebDriver driver, String pageUrl) {
+	BasePage(String pageUrl) {
 		this.pageUrl = pageUrl;
-		this.driver = driver;
+		this.driver = DriverBase.get().getDriver();
 		PageFactory.initElements(driver, this);
 		this.load();
 		this.isLoaded();

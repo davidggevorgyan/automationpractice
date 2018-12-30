@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="config.AnnotationTransformer"/>
     </listeners>
-    <test name="Automationpractice Selenium Suite" parallel="classes" thread-count="2">
+    <test name="Automationpractice Selenium Suite" parallel="methods" thread-count="2">
         <packages>
             <package name=".*"/>
         </packages>
