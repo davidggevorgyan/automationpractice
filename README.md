@@ -1,9 +1,12 @@
 # http://automationpractice.com automation
+
+[![Build Status](https://travis-ci.com/davidggevorgyan/automationpractice.svg?branch=master)](https://travis-ci.com/davidggevorgyan/automationpractice)
+
 ### Following tools were used in this framework:
-Maven, TestNG, Selenium WebDriver, Zalenium, Jenkins, Allure, WebDriver Extensions, Log4j, Maven Surefire Plugin, and BrowserStack. 
+Maven, TestNG, Selenium WebDriver, Zalenium, Travis CI, Allure, WebDriver Extensions, Log4j, Maven Surefire Plugin, and BrowserStack. 
 All automation is done in Java.
 
-### To run tests execute the following command:
+### Execute the following command to run tests:
 `mvn clean test -Dselenium.remote=true -Dselenium.host=LINK_GENERATED_IN_BROWSERSTACK`
 
 ### References:
