@@ -1,12 +1,12 @@
 # http://automationpractice.com automation
-#### Following tools were used in this framework:
+### Following tools were used in this framework:
 Maven, TestNG, Selenium WebDriver, Zalenium, Jenkins, Allure, WebDriver Extensions, Log4j, Maven Surefire Plugin, and BrowserStack. 
 All automation is done in Java.
 
-####To run tests execute the following command:
+### To run tests execute the following command:
 `mvn clean test -Dselenium.remote=true -Dselenium.host=LINK_GENERATED_IN_BROWSERSTACK`
 
-####References:
+### References:
 * [Selenium Guidebook](https://seleniumguidebook.com)
 * [Easy Setup for Parallel Test Execution with Selenium Docker](https://sqadays.com/en/talk/62825)
 * [You dont need static driver or static methods](https://seleniumjava.com/2017/12/23/you-dont-need-static-driver-or-static-methods/)
