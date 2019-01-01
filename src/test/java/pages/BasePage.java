@@ -58,4 +58,13 @@ public abstract class BasePage extends LoadableComponent {
 		return true;
 	}
 
+	void type(WebElement element, String text, Integer timeout) {
+		isElementDisplayed(element, timeout);
+		element.sendKeys(text);
+	}
+
+	void type(WebElement element, String text) {
+		type(element, text, DEFAULT_TIMEOUT);
+	}
+
 }
