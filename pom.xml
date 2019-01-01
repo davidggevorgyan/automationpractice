@@ -46,6 +46,16 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <drivers>
+                        <driver>
+                            <name>chromedriver</name>
+                        </driver>
+                        <driver>
+                            <name>geckodriver</name>
+                        </driver>
+                    </drivers>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
