@@ -30,13 +30,13 @@ public class DriverBase {
 			EventFiringWebDriver eventDriver;
 			switch (BROWSER) {
 				case "chrome":
-					if (HOST.contains("local")) {
-						System.setProperty("webdriver.chrome.driver",
-								"./drivers/chromedriver-mac-64bit");
-					} else {
+					//	if (HOST.contains("local")) {
+					//		System.setProperty("webdriver.chrome.driver",
+					//				"./drivers/chromedriver-mac-64bit");
+					//	} else {
 						System.setProperty("webdriver.chrome.driver",
 								"/tmp/webdriverextensions-maven-plugin/downloads/chromedriver-linux-64bit-2.45.0/chromedriver_linux64.zip");
-					}
+					//	}
 
 					if (Boolean.valueOf(REMOTE)) {
 						DesiredCapabilities caps = new DesiredCapabilities();
