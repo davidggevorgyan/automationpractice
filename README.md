@@ -1,6 +1,6 @@
 # http://automationpractice.com automation
 
-[![Build Status](https://travis-ci.com/davidggevorgyan/automationpractice.svg?branch=master)](https://travis-ci.com/davidggevorgyan/automationpractice)
+[![Build Status](https://travis-ci.org/davidggevorgyan/automationpractice.svg?branch=master)](https://travis-ci.org/davidggevorgyan/automationpractice)
 
 ### Following tools were used in this framework:
 Maven, TestNG, Selenium WebDriver, Zalenium, Travis CI, Allure, WebDriver Extensions, Log4j, Maven Surefire Plugin, and BrowserStack. 
@@ -21,4 +21,3 @@ All automation is done in Java.
 * [Retry Failed Tests in TestNG](http://toolsqa.com/selenium-webdriver/retry-failed-tests-testng/)
 * [Selenium with Java. BrowserStack documentation](https://www.browserstack.com/automate/java)
 * [Retrieve test name on TestNG](https://stackoverflow.com/questions/8596632/retrieve-test-name-on-testng)
-* [How I can pass command line arguments (encrypted)- Travis CI](https://stackoverflow.com/questions/44578930/how-i-can-pass-command-line-arguments-encrypted-travis-ci)
