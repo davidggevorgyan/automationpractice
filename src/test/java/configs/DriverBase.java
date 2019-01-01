@@ -30,8 +30,14 @@ public class DriverBase {
 			EventFiringWebDriver eventDriver;
 			switch (BROWSER) {
 				case "chrome":
-					System.setProperty("webdriver.chrome.driver",
-							"./drivers/chromedriver-mac-64bit");
+					if (HOST.contains("local")) {
+						System.setProperty("webdriver.chrome.driver",
+								"./drivers/chromedriver-mac-64bit");
+					} else {
+						System.setProperty("webdriver.chrome.driver",
+								"/tmp/webdriverextensions-maven-plugin/downloads/chromedriver-linux-64bit-2.45.0/chromedriver_linux64.zip");
+					}
+
 					if (Boolean.valueOf(REMOTE)) {
 						DesiredCapabilities caps = new DesiredCapabilities();
 						caps.setCapability("browser", "Chrome");
@@ -51,8 +57,14 @@ public class DriverBase {
 					break;
 
 				case "firefox":
-					System.setProperty("webdriver.gecko.driver",
-							"./drivers/geckodriver-mac-64bit");
+					if (HOST.contains("local")) {
+						System.setProperty("webdriver.gecko.driver",
+								"./drivers/geckodriver-mac-64bit");
+					} else {
+						System.setProperty("webdriver.chrome.driver",
+								"/tmp/webdriverextensions-maven-plugin/downloads/geckodriver-linux-64bit-0.23.0/geckodriver-v0.23.0-linux64.tar.gz");
+					}
+
 					if (Boolean.valueOf(REMOTE)) {
 						DesiredCapabilities caps = new DesiredCapabilities();
 						caps.setCapability("browser", "Firefox");
