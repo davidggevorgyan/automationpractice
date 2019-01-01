@@ -60,7 +60,7 @@ public class DriverBase {
 								"./drivers/geckodriver-mac-64bit");
 					} else {
 						System.setProperty("webdriver.chrome.driver",
-								"/tmp/webdriverextensions-maven-plugin/downloads/geckodriver-linux-64bit-0.23.0/geckodriver-v0.23.0-linux64.tar.gz");
+								"/home/travis/build/davidggevorgyan/automationpractice/drivers/geckodriver-linux-64bit");
 					}
 
 					if (Boolean.valueOf(REMOTE)) {
