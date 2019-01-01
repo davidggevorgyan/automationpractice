@@ -6,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -27,16 +26,17 @@ public class DriverBase {
 	public WebDriver getDriver(String testName) {
 		if (driverThread.get() == null) {
 			WebDriver driver;
-			EventFiringWebDriver eventDriver;
 			switch (BROWSER) {
 				case "chrome":
-					//	if (HOST.contains("local")) {
-					//		System.setProperty("webdriver.chrome.driver",
-					//				"./drivers/chromedriver-mac-64bit");
-					//	} else {
+					System.out.println(HOST);
+					System.out.println(REMOTE);
+					if (HOST.contains("local")) {
+						System.setProperty("webdriver.chrome.driver",
+								"./drivers/chromedriver-mac-64bit");
+					} else {
 						System.setProperty("webdriver.chrome.driver",
 								"/home/travis/build/davidggevorgyan/automationpractice/drivers/chromedriver-linux-64bit");
-					//	}
+					}
 
 					if (Boolean.valueOf(REMOTE)) {
 						DesiredCapabilities caps = new DesiredCapabilities();
