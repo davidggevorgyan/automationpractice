@@ -28,8 +28,6 @@ public class DriverBase {
 			WebDriver driver;
 			switch (BROWSER) {
 				case "chrome":
-					System.out.println(HOST);
-					System.out.println(REMOTE);
 					if (HOST.contains("local")) {
 						System.setProperty("webdriver.chrome.driver",
 								"./drivers/chromedriver-mac-64bit");
