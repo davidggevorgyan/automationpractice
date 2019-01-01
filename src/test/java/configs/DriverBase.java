@@ -35,7 +35,7 @@ public class DriverBase {
 					//				"./drivers/chromedriver-mac-64bit");
 					//	} else {
 						System.setProperty("webdriver.chrome.driver",
-								"/tmp/webdriverextensions-maven-plugin/downloads/chromedriver-linux-64bit-2.45.0/chromedriver_linux64.zip");
+								"/home/travis/build/davidggevorgyan/automationpractice/drivers/chromedriver-linux-64bit");
 					//	}
 
 					if (Boolean.valueOf(REMOTE)) {
