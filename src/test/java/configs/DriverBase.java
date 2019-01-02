@@ -23,6 +23,7 @@ public class DriverBase {
 		return new DriverBase();
 	}
 
+	//TODO optimize getDriver method
 	public WebDriver getDriver(String testName) {
 		if (driverThread.get() == null) {
 			WebDriver driver;
@@ -36,7 +37,7 @@ public class DriverBase {
 								"/home/travis/build/davidggevorgyan/automationpractice/drivers/chromedriver-linux-64bit");
 					}
 
-					if (Boolean.valueOf(REMOTE)) {
+					if (Boolean.valueOf(REMOTE) && !HOST.contains("local")) {
 						DesiredCapabilities caps = new DesiredCapabilities();
 						caps.setCapability("browser", "Chrome");
 						caps.setCapability("browser_version", "71.0");
@@ -45,8 +46,9 @@ public class DriverBase {
 						caps.setCapability("resolution", "1920x1080");
 						caps.setCapability("name", testName);
 						caps.setCapability("project", "automationpractice");
-
 						driver = initRemoteDriver(caps);
+					} else if (Boolean.valueOf(REMOTE) && HOST.contains("local")) {
+						driver = initRemoteDriver(DesiredCapabilities.chrome());
 					} else {
 						driver = new ChromeDriver();
 					}
@@ -63,7 +65,7 @@ public class DriverBase {
 								"/home/travis/build/davidggevorgyan/automationpractice/drivers/geckodriver-linux-64bit");
 					}
 
-					if (Boolean.valueOf(REMOTE)) {
+					if (Boolean.valueOf(REMOTE) && !HOST.contains("local")) {
 						DesiredCapabilities caps = new DesiredCapabilities();
 						caps.setCapability("browser", "Firefox");
 						caps.setCapability("browser_version", "64.0");
@@ -73,6 +75,8 @@ public class DriverBase {
 						caps.setCapability("name", testName);
 						caps.setCapability("project", "automationpractice");
 						driver = initRemoteDriver(caps);
+					} else if (Boolean.valueOf(REMOTE) && HOST.contains("local")) {
+						driver = initRemoteDriver(DesiredCapabilities.firefox());
 					} else {
 						driver = new FirefoxDriver();
 					}
