@@ -1,6 +1,7 @@
 package pages;
 
 import configs.DriverBase;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -67,7 +68,11 @@ public abstract class BasePage extends LoadableComponent {
 		type(element, text, DEFAULT_TIMEOUT);
 	}
 
-	public String getCurrentUrl() {
+	String getCurrentUrl() {
 		return driver.getCurrentUrl();
+	}
+
+	Alert switchToAlert() {
+		return driver.switchTo().alert();
 	}
 }

@@ -46,6 +46,12 @@ public class ItemPage extends BasePage {
 	@FindBy(id = "layer_cart_product_price")
 	private WebElement priceInCartFrame;
 
+	@FindBy(id = "wishlist_button")
+	private WebElement addToWishlist;
+
+	@FindBy(className = "fancybox-error")
+	private WebElement fancyBox;
+
 
 	public ItemPage() {
 		super("index.php?id_product=5&controller=product");
@@ -58,6 +64,10 @@ public class ItemPage extends BasePage {
 
 	public void clickAddToCart() {
 		click(addToCartButton);
+	}
+
+	public void clickAddToWishlist() {
+		click(addToWishlist);
 	}
 
 	public boolean isCheckoutFrameDisplayed() {
@@ -109,10 +119,12 @@ public class ItemPage extends BasePage {
 		return Double.parseDouble(priceInCartFrame.getText().substring(1));
 	}
 
+	public String getFancyBoxText() {
+		isElementDisplayed(fancyBox);
+		return fancyBox.getText();
+	}
 
-
-
-
-
-
+	public String getUrl() {
+		return getCurrentUrl();
+	}
 }

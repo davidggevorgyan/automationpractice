@@ -37,7 +37,7 @@ public class ItemTest extends BaseTest {
 	public void colorSelection() {
 		ItemPage itemPage = new ItemPage();
 		itemPage.setColor("Blue");
-		assertEquals("http://automationpractice.com/index.php?id_product=5&controller=product#/size-s/color-blue", itemPage.getCurrentUrl(), "Images are not filtered based on color");
+		assertEquals("http://automationpractice.com/index.php?id_product=5&controller=product#/size-s/color-blue", itemPage.getUrl(), "Images are not filtered based on color");
 	}
 
 }
