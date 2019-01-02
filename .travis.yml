@@ -7,4 +7,4 @@ addons:
       secure: vpXoq5tWpi65Whs50zbh0vR93kA1hh0xPoLMhuhwfRPxG4FNihmbAYuZgTnXcvCVVgyJiZwWC6VB1j7iTkhP7ga7V6Ahic4i308U3kfP7Sri+HL5DO3E0WCQDVa8Dsst7j5PWahp/TGpNGFjrPhifTXJJtRoEEZv2kSwMM1MtAjWLK4Y5TjCYiixVXvYRZm6QmDzqKC/B9mAlfjftTbyxvMQFQB0qfwojkzUzNQJ2Tmkzcc7/M2D6UQGZI2xqepHY1EoIwnNFh1VBndlgU4bwbQCwQxiUyUIXtt/PEMieNJVgrgDOa8KKWjjoLW8wZa1oofHICKg5kLg8r6TnC5QhMb2HTOJJ79s92PD/ekC35a0yzPd4sxvqTnqOEKqaiAOECxmy8i5G0PYLxDQBcHbQP4tYabU0NlN0W3OJbD+oxGXADO9ncgNVS6g7igKp0rOSQKmfr38i+jUU9xKHlLKzmnqeRlxYS6K6XCXQl6HwQ46Uy1j+hHP5WFURYQ3JUjwBCm+whx0FDP4JoM+rPa/3bo4m+uCv93bFNI6WQ0T0isME+ag8QhKQt2xwB35hJBrrOci3p6N+spyrYGgm1a0idgQLTu0sxAKGVJuxzDGEPo0XjVSHhFfiGEqW0f3ahjBX7+dgV2nK/H57Y15yXKgAX6qhrwYTi3Z4Wo1ZjNybzU=
 install: true
 script:
-  mvn clean test -Dselenium.remote=true -Dselenium.host=https://$username:$accesskey@hub-cloud.browserstack.com/wd/hub
+  mvn clean test -Dselenium.host=cloud -Dselenium.hostURL=https://$username:$accesskey@hub-cloud.browserstack.com/wd/hub

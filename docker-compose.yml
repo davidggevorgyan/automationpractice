@@ -16,7 +16,7 @@ services:
     ports:
       - 4444:4444
     command: >
-      start --desiredContainers 2
+      start --desiredContainers 5
             --maxDockerSeleniumContainers 8
             --screenWidth 1920 --screenHeight 1080
             --timeZone "Africa/Abidjan"

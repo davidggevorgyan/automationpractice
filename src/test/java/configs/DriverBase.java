@@ -15,57 +15,27 @@ public class DriverBase {
 	public static final String BASE_URL = System.getProperty("selenium.baseURL", "http://automationpractice.com/");
 	public static final Integer DEFAULT_TIMEOUT = Integer.parseInt(System.getProperty("selenium.defaultTimeout", "5"));
 	private static final String BROWSER = System.getProperty("selenium.browser", "chrome");
-	private static final String REMOTE = System.getProperty("selenium.remote", "false");
-	private static final String HOST = System.getProperty("selenium.host", "http://localhost:4444/wd/hub");
+	private static final String HOST = System.getProperty("selenium.host", "localhost");
+	private static final String HOST_URL = System.getProperty("selenium.hostURL", "http://localhost:4444/wd/hub");
 	private static final ThreadLocal<WebDriver> driverThread = new ThreadLocal<>();
 
 	public static DriverBase get() {
 		return new DriverBase();
 	}
 
-	//TODO optimize getDriver method
 	public WebDriver getDriver(String testName) {
 		if (driverThread.get() == null) {
 			WebDriver driver;
-			switch (BROWSER) {
-				case "chrome":
-					if (HOST.contains("local")) {
-						System.setProperty("webdriver.chrome.driver",
-								"./drivers/chromedriver-mac-64bit");
+			switch (HOST) {
+				case "zalenium":
+					if (BROWSER.equals("firefox")) {
+						driver = initRemoteDriver(DesiredCapabilities.firefox());
 					} else {
-						System.setProperty("webdriver.chrome.driver",
-								"/home/travis/build/davidggevorgyan/automationpractice/drivers/chromedriver-linux-64bit");
-					}
-
-					if (Boolean.valueOf(REMOTE) && !HOST.contains("local")) {
-						DesiredCapabilities caps = new DesiredCapabilities();
-						caps.setCapability("browser", "Chrome");
-						caps.setCapability("browser_version", "71.0");
-						caps.setCapability("os", "Windows");
-						caps.setCapability("os_version", "10");
-						caps.setCapability("resolution", "1920x1080");
-						caps.setCapability("name", testName);
-						caps.setCapability("project", "automationpractice");
-						driver = initRemoteDriver(caps);
-					} else if (Boolean.valueOf(REMOTE) && HOST.contains("local")) {
 						driver = initRemoteDriver(DesiredCapabilities.chrome());
-					} else {
-						driver = new ChromeDriver();
 					}
-					driverThread.set(driver);
-					getDriver().manage().window().maximize();
 					break;
-
-				case "firefox":
-					if (HOST.contains("local")) {
-						System.setProperty("webdriver.gecko.driver",
-								"./drivers/geckodriver-mac-64bit");
-					} else {
-						System.setProperty("webdriver.chrome.driver",
-								"/home/travis/build/davidggevorgyan/automationpractice/drivers/geckodriver-linux-64bit");
-					}
-
-					if (Boolean.valueOf(REMOTE) && !HOST.contains("local")) {
+				case "cloud":
+					if (BROWSER.equals("firefox")) {
 						DesiredCapabilities caps = new DesiredCapabilities();
 						caps.setCapability("browser", "Firefox");
 						caps.setCapability("browser_version", "64.0");
@@ -75,19 +45,35 @@ public class DriverBase {
 						caps.setCapability("name", testName);
 						caps.setCapability("project", "automationpractice");
 						driver = initRemoteDriver(caps);
-					} else if (Boolean.valueOf(REMOTE) && HOST.contains("local")) {
-						driver = initRemoteDriver(DesiredCapabilities.firefox());
 					} else {
-						driver = new FirefoxDriver();
+						DesiredCapabilities caps = new DesiredCapabilities();
+						caps.setCapability("browser", "Chrome");
+						caps.setCapability("browser_version", "71.0");
+						caps.setCapability("os", "Windows");
+						caps.setCapability("os_version", "10");
+						caps.setCapability("resolution", "1920x1080");
+						caps.setCapability("name", testName);
+						caps.setCapability("project", "automationpractice");
+						driver = initRemoteDriver(caps);
 					}
-					driverThread.set(driver);
-					getDriver().manage().window().maximize();
+					break;
+				default:
+					if (BROWSER.equals("firefox")) {
+						System.setProperty("webdriver.gecko.driver",
+								"./drivers/geckodriver-mac-64bit");
+						driver = new FirefoxDriver();
+					} else {
+						System.setProperty("webdriver.chrome.driver",
+								"./drivers/chromedriver-mac-64bit");
+						driver = new ChromeDriver();
+					}
 					break;
 			}
+			driverThread.set(driver);
+			getDriver().manage().window().maximize();
+
 		}
-
 		return driverThread.get();
-
 	}
 
 	public WebDriver getDriver() {
@@ -97,7 +83,7 @@ public class DriverBase {
 	private RemoteWebDriver initRemoteDriver(DesiredCapabilities capability) {
 		RemoteWebDriver remoteDriver = null;
 		try {
-			remoteDriver = new RemoteWebDriver(new URL(HOST), capability);
+			remoteDriver = new RemoteWebDriver(new URL(HOST_URL), capability);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
