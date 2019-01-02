@@ -67,4 +67,7 @@ public abstract class BasePage extends LoadableComponent {
 		type(element, text, DEFAULT_TIMEOUT);
 	}
 
+	public String getCurrentUrl() {
+		return driver.getCurrentUrl();
+	}
 }
