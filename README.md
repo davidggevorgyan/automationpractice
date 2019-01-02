@@ -7,7 +7,7 @@ Maven, TestNG, Selenium WebDriver, Zalenium, Travis CI, Allure, WebDriver Extens
 All automation is done in Java.
 
 ### Execute the following command to run tests:
-`mvn clean test -Dselenium.remote=true -Dselenium.host=LINK_GENERATED_IN_BROWSERSTACK`
+`mvn clean test -Dselenium.host=cloud -Dselenium.hostURL=LINK_GENERATED_IN_BROWSERSTACK`
 
 ### References:
 * [Selenium Guidebook](https://seleniumguidebook.com)
