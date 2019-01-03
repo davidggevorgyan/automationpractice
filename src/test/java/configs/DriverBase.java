@@ -95,4 +95,8 @@ public class DriverBase {
 		driver.quit();
 		driverThread.remove();
 	}
+
+	public String getSession(WebDriver driver) {
+		return String.valueOf(((RemoteWebDriver) driver).getSessionId());
+	}
 }

@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/davidggevorgyan/automationpractice.svg?branch=master)](https://travis-ci.org/davidggevorgyan/automationpractice)
 
 ### Following tools were used in this framework:
-Maven, TestNG, Selenium WebDriver, Zalenium, Travis CI, Allure, WebDriver Extensions, Log4j, Maven Surefire Plugin, and BrowserStack. 
+Maven, TestNG, Selenium WebDriver, Zalenium, Travis CI, Extent Reporting Framework, WebDriver Extensions, Log4j, Maven Surefire Plugin, and BrowserStack. 
 All automation is done in Java.
 
 ### Execute the following command to run tests:
@@ -21,3 +21,5 @@ All automation is done in Java.
 * [Retry Failed Tests in TestNG](http://toolsqa.com/selenium-webdriver/retry-failed-tests-testng/)
 * [Selenium with Java. BrowserStack documentation](https://www.browserstack.com/automate/java)
 * [Retrieve test name on TestNG](https://stackoverflow.com/questions/8596632/retrieve-test-name-on-testng)
+* [Extent Reporting Framework Documentation](http://extentreports.com/docs/versions/4/java/)
+* [Extent Reports Version 3 Reporting with TestNG Listener](https://www.swtestacademy.com/extent-reports-version-3-reporting-testng/)

@@ -3,6 +3,7 @@
 <suite name="Selenium Suite">
     <listeners>
         <listener class-name="configs.TestNG.AnnotationTransformer"/>
+        <listener class-name="configs.TestNG.TestListener"/>
     </listeners>
     <test name="Automationpractice Selenium Suite" parallel="methods" thread-count="5">
         <packages>
