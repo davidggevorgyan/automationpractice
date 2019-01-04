@@ -13,6 +13,8 @@ script:
   mvn clean test -Dselenium.host=cloud -Dselenium.hostURL=https://$username:$accesskey@hub-cloud.browserstack.com/wd/hub
 deploy:
   provider: pages
+  repo: davidggevorgyan.github.io
+  target-branch: master
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
