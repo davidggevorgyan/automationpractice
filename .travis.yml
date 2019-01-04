@@ -9,4 +9,7 @@ install: true
 script:
   mvn clean test -Dselenium.host=cloud -Dselenium.hostURL=https://$username:$accesskey@hub-cloud.browserstack.com/wd/hub
 after_script:
+  - pwd
+  - ls -la
+  - cd target/report
   - curl -T target/report/report.html ftp://$ftpusername:$ftppassword@$ftppath/www/
