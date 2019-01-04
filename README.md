@@ -1,7 +1,7 @@
 # http://automationpractice.com automation
 
 [![Build Status](https://travis-ci.org/davidggevorgyan/automationpractice.svg?branch=master)](https://travis-ci.org/davidggevorgyan/automationpractice)
-[![Test Report](http://pse.am/reporting.svg)](https://davidggevorgyan.github.io/automationpractice/report.html)
+[![Test Report](http://pse.am/reporting.svg)](https://davidggevorgyan.github.io/automationpractice/)
 
 
 ### Following tools were used in this framework:

@@ -12,7 +12,7 @@ public class ExtentManager {
 	private final static Logger logger = Logger.getLogger(ExtentManager.class);
 
 	public static ExtentReports createInstance() {
-		String fileName = "report.html";
+		String fileName = "index.html";
 		String path = "target/report/";
 		createReportPath(path);
 		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(path + fileName);
