@@ -5,7 +5,7 @@
 
 
 ### Following tools were used in this framework:
-Maven, TestNG, Selenium WebDriver, Zalenium, Travis CI, Extent Reporting Framework, WebDriver Extensions, Log4j, Maven Surefire Plugin, GitHub Pages, and BrowserStack. 
+Maven, TestNG, Selenium WebDriver, Zalenium, Travis CI, Extent Reporting Framework, WebDriver Extensions, Log4j, Maven Surefire Plugin(for parallel tests execution), GitHub Pages, and BrowserStack. 
 All automation is done in Java.
 
 ### Execute the following command to run tests:
