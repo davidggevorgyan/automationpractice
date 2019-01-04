@@ -1,10 +1,10 @@
 # http://automationpractice.com automation
 
 [![Build Status](https://travis-ci.org/davidggevorgyan/automationpractice.svg?branch=master)](https://travis-ci.org/davidggevorgyan/automationpractice)
-[![Test Report](http://pse.am/reporting.svg)](http://automationpractice.rf.gd/report.html)
+[![Test Report](http://pse.am/reporting.svg)](https://davidggevorgyan.github.io/report.html)
 
 ### Following tools were used in this framework:
-Maven, TestNG, Selenium WebDriver, Zalenium, Travis CI, Extent Reporting Framework, WebDriver Extensions, Log4j, Maven Surefire Plugin, and BrowserStack. 
+Maven, TestNG, Selenium WebDriver, Zalenium, Travis CI, Extent Reporting Framework, WebDriver Extensions, Log4j, Maven Surefire Plugin, GitHub Pages, and BrowserStack. 
 All automation is done in Java.
 
 ### Execute the following command to run tests:
@@ -24,3 +24,4 @@ All automation is done in Java.
 * [Retrieve test name on TestNG](https://stackoverflow.com/questions/8596632/retrieve-test-name-on-testng)
 * [Extent Reporting Framework Documentation](http://extentreports.com/docs/versions/4/java/)
 * [Extent Reports Version 3 Reporting with TestNG Listener](https://www.swtestacademy.com/extent-reports-version-3-reporting-testng/)
+* [GitHub pages to store Extent Report](https://pages.github.com)

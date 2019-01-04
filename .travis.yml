@@ -11,5 +11,11 @@ before_install:
 install: true
 script:
   mvn clean test -Dselenium.host=cloud -Dselenium.hostURL=https://$username:$accesskey@hub-cloud.browserstack.com/wd/hub
-after_script:
-  - ./upload_script.sh
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  local-dir: target/report
+  on:
+    branch: master
