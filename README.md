@@ -1,7 +1,7 @@
 # http://automationpractice.com automation
 
 [![Build Status](https://travis-ci.org/davidggevorgyan/automationpractice.svg?branch=master)](https://travis-ci.org/davidggevorgyan/automationpractice)
-[![Test Report](http://pse.am/reporting.svg)](http://pse.am/report.html)
+[![Test Report](http://pse.am/reporting.svg)](http://automationpractice.rf.gd/report.html)
 
 ### Following tools were used in this framework:
 Maven, TestNG, Selenium WebDriver, Zalenium, Travis CI, Extent Reporting Framework, WebDriver Extensions, Log4j, Maven Surefire Plugin, and BrowserStack. 
