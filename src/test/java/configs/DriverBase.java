@@ -20,7 +20,11 @@ public class DriverBase {
 	private static final ThreadLocal<WebDriver> driverThread = new ThreadLocal<>();
 
 	public static DriverBase get() {
-		return new DriverBase();
+		return DriverBaseHolder.HOLDER_INSTANCE;
+	}
+
+	private static class DriverBaseHolder {
+		static final DriverBase HOLDER_INSTANCE = new DriverBase();
 	}
 
 	public WebDriver getDriver(String testName) {
