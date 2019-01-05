@@ -28,7 +28,7 @@ public class TestListener implements ITestListener {
 	@Override
 	public synchronized void onTestStart(ITestResult result) {
 		logger.info((result.getMethod().getMethodName() + " started!"));
-		ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName(), result.getMethod().getDescription());
+		ExtentTest extentTest = extent.createTest(result.getName()).assignCategory(result.getInstanceName());
 		test.set(extentTest);
 	}
 
