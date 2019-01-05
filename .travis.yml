@@ -10,7 +10,7 @@ before_install:
   - date
 install: true
 script:
-  mvn clean test -Dselenium.host=cloud -Dselenium.hostURL=https://$username:$accesskey@hub-cloud.browserstack.com/wd/hub
+  mvn clean test -Dselenium.host=cloud -Dselenium.hostURL=https://$USERNAME:$ACCESSKEY@hub-cloud.browserstack.com/wd/hub
 deploy:
   provider: pages
   skip-cleanup: true
