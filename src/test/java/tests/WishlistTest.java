@@ -11,7 +11,7 @@ import static org.testng.Assert.assertTrue;
 
 public class WishlistTest extends BaseTest {
 	@Test
-	public void createAddToDeleteWishlist() {
+	public void createUpdateDeleteWishlist() {
 		SignInPage signInPage = new SignInPage();
 		signInPage.signInWithCredentials("d1@grr.la", "d1@grr.la");
 
@@ -25,6 +25,6 @@ public class WishlistTest extends BaseTest {
 		assertEquals(itemPage.getFancyBoxText(), "Added to your wishlist.", "FancyBox text was not valid");
 
 		wishlistPage.load();
-		wishlistPage.deletelWishlist(wishlistName);
+		assertTrue(wishlistPage.deletelWishlist(wishlistName), "The wishlist was not removed");
 	}
 }

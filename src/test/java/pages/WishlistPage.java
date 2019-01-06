@@ -45,16 +45,16 @@ public class WishlistPage extends BasePage {
 		return getCell(wishlistName, Column.NAME) != null;
 	}
 
-	public void deletelWishlist(String wishlistName) {
+	public boolean deletelWishlist(String wishlistName) {
 		isElementDisplayed(wishlistTable);
 		WebElement wishlistDeleteButton = getCell(wishlistName, Column.DELETE);
 		wishlistDeleteButton.findElement(By.className("icon-remove")).click();
 		Alert popup = switchToAlert();
 		popup.accept();
-		isElementNotDisplayed(wishlistDeleteButton);
+		return isElementNotDisplayed(wishlistDeleteButton);
 	}
 
-	public WebElement getCell(String wishlistName, Column columnName) {
+	private WebElement getCell(String wishlistName, Column columnName) {
 		List<WebElement> allRows = wishlistTable.findElements(By.xpath("//*[contains(@class,\"table\")]/tbody/tr[*]/td[1]"));
 		int rowNumberCounter = 1;
 		for (WebElement row : allRows) {

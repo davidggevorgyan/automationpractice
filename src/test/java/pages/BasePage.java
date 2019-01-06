@@ -2,6 +2,7 @@ package pages;
 
 import configs.DriverBase;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.LoadableComponent;
@@ -85,5 +86,9 @@ public abstract class BasePage extends LoadableComponent {
 
 	Alert switchToAlert() {
 		return driver.switchTo().alert();
+	}
+
+	Actions hover() {
+		return new Actions(driver);
 	}
 }

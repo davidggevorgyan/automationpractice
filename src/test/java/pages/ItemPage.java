@@ -18,7 +18,6 @@ public class ItemPage extends BasePage {
 	@FindBy(id = "layer_cart")
 	private WebElement cartFrame;
 
-
 	@FindBy(css = "#add_to_cart > button > span")
 	private WebElement addToCartButton;
 
@@ -52,9 +51,16 @@ public class ItemPage extends BasePage {
 	@FindBy(className = "fancybox-error")
 	private WebElement fancyBox;
 
+	@FindBy(className = "cross")
+	private WebElement closeCartFrame;
+
 
 	public ItemPage() {
 		super("index.php?id_product=5&controller=product");
+	}
+
+	public ItemPage(String url) {
+		super(url);
 	}
 
 	@Override
@@ -64,6 +70,7 @@ public class ItemPage extends BasePage {
 
 	public void clickAddToCart() {
 		click(addToCartButton);
+		isElementDisplayed(proceedToCheckoutButton);
 	}
 
 	public void clickAddToWishlist() {
@@ -127,4 +134,10 @@ public class ItemPage extends BasePage {
 	public String getUrl() {
 		return getCurrentUrl();
 	}
+
+	public void closeCartFrame() {
+		click(closeCartFrame);
+		isElementNotDisplayed(cartFrame);
+	}
+
 }
