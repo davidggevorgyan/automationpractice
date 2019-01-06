@@ -1,10 +1,7 @@
 package pages;
 
 import configs.DriverBase;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.LoadableComponent;
@@ -57,6 +54,20 @@ public abstract class BasePage extends LoadableComponent {
 			return false;
 		}
 		return true;
+	}
+
+	boolean isElementNotDisplayed(WebElement element, Integer timeout) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, timeout);
+			wait.until(ExpectedConditions.invisibilityOf(element));
+		} catch (TimeoutException e) {
+			return false;
+		}
+		return true;
+	}
+
+	boolean isElementNotDisplayed(WebElement element) {
+		return isElementNotDisplayed(element, DEFAULT_TIMEOUT);
 	}
 
 	void type(WebElement element, String text, Integer timeout) {
