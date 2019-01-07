@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.LoadableComponent;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.function.Function;
+
 import static configs.DriverBase.BASE_URL;
 import static configs.DriverBase.DEFAULT_TIMEOUT;
 
@@ -69,6 +71,26 @@ public abstract class BasePage extends LoadableComponent {
 
 	boolean isElementNotDisplayed(WebElement element) {
 		return isElementNotDisplayed(element, DEFAULT_TIMEOUT);
+	}
+
+	void isElementTextChanged(WebElement element, String originalText, Integer timeout) {
+		WebDriverWait wait = new WebDriverWait(driver, timeout);
+		wait.until(new Function<WebDriver, Boolean>() {
+			String initialText = originalText;
+
+			public Boolean apply(WebDriver driver) {
+				if (element.getText().equals(initialText)) {
+					return null;
+				} else {
+					return true;
+				}
+
+			}
+		});
+	}
+
+	void isElementTextChanged(WebElement element, String originalText) {
+		isElementTextChanged(element, originalText, DEFAULT_TIMEOUT);
 	}
 
 	void type(WebElement element, String text, Integer timeout) {
