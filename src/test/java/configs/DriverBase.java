@@ -18,6 +18,8 @@ public class DriverBase {
 	private static final String HOST = System.getProperty("selenium.host", "localhost");
 	private static final String HOST_URL = System.getProperty("selenium.hostURL", "http://localhost:4444/wd/hub");
 	private static final ThreadLocal<WebDriver> driverThread = new ThreadLocal<>();
+	public static final String TRAVIS_BUILD_NUMBER = System.getProperty("travis.buildNumber", "LocalRun");
+	public static final String TRAVIS_BUILD_WEB_URL = System.getProperty("travis.buildURL", "localhost");
 
 	public static DriverBase get() {
 		return DriverBaseHolder.HOLDER_INSTANCE;

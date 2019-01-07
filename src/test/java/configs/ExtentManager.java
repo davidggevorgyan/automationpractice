@@ -8,6 +8,9 @@ import org.apache.log4j.Logger;
 
 import java.io.File;
 
+import static configs.DriverBase.TRAVIS_BUILD_NUMBER;
+import static configs.DriverBase.TRAVIS_BUILD_WEB_URL;
+
 public class ExtentManager {
 	private final static Logger logger = Logger.getLogger(ExtentManager.class);
 
@@ -19,10 +22,12 @@ public class ExtentManager {
 		htmlReporter.config().setTheme(Theme.STANDARD);
 		htmlReporter.config().setDocumentTitle(fileName);
 		htmlReporter.config().setEncoding("utf-8");
-		htmlReporter.config().setReportName("Automation Execution Report");
+		htmlReporter.config().setReportName("Automation Execution Report for Run: <a target=\"_blank\" href=\"" + TRAVIS_BUILD_WEB_URL + "\">#" + TRAVIS_BUILD_NUMBER + "</a>   |   <a target=\"_blank\" href=\"log4j-application.log\">📚 Log4j Log</a>");
 		ExtentReports extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
 		return extent;
+
+
 	}
 
 	private static void createReportPath(String path) {
