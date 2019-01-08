@@ -11,7 +11,7 @@ before_install:
 install: true
 script:
   mvn clean test -Dselenium.host=cloud -Dselenium.hostURL=https://$USERNAME:$ACCESSKEY@hub-cloud.browserstack.com/wd/hub -Dtravis.buildNumber=$TRAVIS_BUILD_NUMBER -Dtravis.buildURL=$TRAVIS_BUILD_WEB_URL
-deploy:
+after_script:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
