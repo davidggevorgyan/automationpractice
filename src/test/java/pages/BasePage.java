@@ -79,12 +79,7 @@ public abstract class BasePage extends LoadableComponent {
 			String initialText = originalText;
 
 			public Boolean apply(WebDriver driver) {
-				if (element.getText().equals(initialText)) {
-					return null;
-				} else {
-					return true;
-				}
-
+				return !element.getText().equals(initialText);
 			}
 		});
 	}

@@ -5,6 +5,7 @@ import pages.CheckOutPage;
 import pages.ItemPage;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 public class CheckOutTest extends BaseTest {
 	@Test
@@ -20,5 +21,22 @@ public class CheckOutTest extends BaseTest {
 		assertEquals(checkOutPage.getItemsInCart(), 4, "Incorrect number of items in cart");
 		checkOutPage.pressDecreaseQuantity("Blouse");
 		assertEquals(checkOutPage.getItemsInCart(), 3, "Incorrect number of items in cart");
+	}
+
+	@Test
+	public void removeLastItemFromCart() {
+		ItemPage itemPage = new ItemPage();
+		itemPage.clickAddToCart();
+		CheckOutPage checkOutPage = new CheckOutPage();
+		checkOutPage.pressDecreaseQuantity("Printed Summer Dress");
+		assertTrue(checkOutPage.isCartEmpty(), "The cart was not empty");
+	}
+
+	@Test
+	public void buyItemsFromCart() {
+		ItemPage itemPage = new ItemPage();
+		itemPage.clickAddToCart();
+		CheckOutPage checkOutPage = new CheckOutPage();
+		assertTrue(checkOutPage.purchase(), "Purchase process failed");
 	}
 }

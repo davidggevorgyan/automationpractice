@@ -17,9 +17,11 @@ public class DriverBase {
 	private static final String BROWSER = System.getProperty("selenium.browser", "chrome");
 	private static final String HOST = System.getProperty("selenium.host", "localhost");
 	private static final String HOST_URL = System.getProperty("selenium.hostURL", "http://localhost:4444/wd/hub");
+	public static final String LOGIN = System.getProperty("selenium.login", "d1@grr.la");
+	public static final String PASSWORD = System.getProperty("selenium.password", "d1@grr.la");
+	static final String TRAVIS_BUILD_NUMBER = System.getProperty("travis.buildNumber", "LocalRun");
+	static final String TRAVIS_BUILD_WEB_URL = System.getProperty("travis.buildURL", "localhost");
 	private static final ThreadLocal<WebDriver> driverThread = new ThreadLocal<>();
-	public static final String TRAVIS_BUILD_NUMBER = System.getProperty("travis.buildNumber", "LocalRun");
-	public static final String TRAVIS_BUILD_WEB_URL = System.getProperty("travis.buildURL", "localhost");
 
 	public static DriverBase get() {
 		return DriverBaseHolder.HOLDER_INSTANCE;

@@ -7,11 +7,32 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
+import static configs.DriverBase.LOGIN;
+import static configs.DriverBase.PASSWORD;
 import static org.testng.Assert.assertTrue;
 
 public class CheckOutPage extends BasePage {
 	@FindBy(css = "[href*='order&step=1']")
-	private WebElement proceedToStep1;
+	private WebElement proceedToStep2;
+
+	@FindBy(css = "[name='processAddress']")
+	private WebElement proceedToStep4;
+
+	@FindBy(css = "[name='processCarrier']")
+	private WebElement proceedToStep5;
+
+	@FindBy(className = "checker")
+	private WebElement termsOfServiceCheckobx;
+
+	@FindBy(className = "bankwire")
+	private WebElement payBankWire;
+
+	@FindBy(css = "#cart_navigation > button")
+	private WebElement completeOrder;
+
+	@FindBy(css = "#center_column > div")
+	private WebElement successMessage;
+
 
 	@FindBy(id = "summary_products_quantity")
 	private WebElement itemsInCart;
@@ -19,13 +40,26 @@ public class CheckOutPage extends BasePage {
 	@FindBy(id = "cart_summary")
 	private WebElement cartTable;
 
+	@FindBy(css = "[class*='alert-warning']")
+	private WebElement emptyCart;
+
+	@FindBy(id = "email")
+	private WebElement emailField;
+
+	@FindBy(id = "passwd")
+	private WebElement passwordField;
+
+	@FindBy(id = "SubmitLogin")
+	private WebElement signInButton;
+
+
 	public CheckOutPage() {
 		super("index.php?controller=order");
 	}
 
 	@Override
 	protected void isLoaded() throws Error {
-		assertTrue(isElementDisplayed(proceedToStep1), "The page load is failed");
+		assertTrue(isElementDisplayed(proceedToStep2), "The page load is failed");
 	}
 
 	public int getItemsInCart() {
@@ -55,8 +89,28 @@ public class CheckOutPage extends BasePage {
 	public void pressDecreaseQuantity(String itemName) {
 		String originalText = itemsInCart.getText();
 		WebElement quantity = getItem(itemName, Column.QTY);
+		int originalQuantity = Integer.valueOf(quantity.findElement(By.tagName("input")).getAttribute("value"));
 		click(quantity.findElement(By.className("icon-minus")));
-		isElementTextChanged(itemsInCart, originalText);
+		if (originalQuantity != 1) {
+			isElementTextChanged(itemsInCart, originalText);
+		}
+	}
+
+	public boolean isCartEmpty() {
+		return isElementDisplayed(emptyCart);
+	}
+
+	public boolean purchase() {
+		click(proceedToStep2);
+		type(emailField, LOGIN);
+		type(passwordField, PASSWORD);
+		click(signInButton);
+		click(proceedToStep4);
+		click(termsOfServiceCheckobx);
+		click(proceedToStep5);
+		click(payBankWire);
+		click(completeOrder);
+		return successMessage.getText().contains("is complete");
 	}
 
 	enum Column {

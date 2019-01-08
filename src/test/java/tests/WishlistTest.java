@@ -5,6 +5,8 @@ import pages.ItemPage;
 import pages.SignInPage;
 import pages.WishlistPage;
 
+import static configs.DriverBase.LOGIN;
+import static configs.DriverBase.PASSWORD;
 import static java.util.UUID.randomUUID;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -13,7 +15,7 @@ public class WishlistTest extends BaseTest {
 	@Test
 	public void createUpdateDeleteWishlist() {
 		SignInPage signInPage = new SignInPage();
-		signInPage.signInWithCredentials("d1@grr.la", "d1@grr.la");
+		signInPage.signInWithCredentials(LOGIN, PASSWORD);
 
 		WishlistPage wishlistPage = new WishlistPage();
 		String wishlistName = String.valueOf(randomUUID()).substring(0, 8);

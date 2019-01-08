@@ -20,6 +20,9 @@ public class SignInPage extends BasePage {
 	@FindBy(className = "logout")
 	private WebElement signOutLink;
 
+	@FindBy(className = "login")
+	private WebElement signInLink;
+
 	@FindBy(css = ".lost_password > a")
 	private WebElement forgotPasswordLink;
 
@@ -56,8 +59,12 @@ public class SignInPage extends BasePage {
 
 	}
 
+	public boolean isSignInLinkDisplayed() {
+		return isElementDisplayed(signInButton);
+	}
+
 	public boolean isSignOutLinkDisplayed() {
-		return isElementDisplayed(signOutLink);
+		return isElementDisplayed(signInButton);
 	}
 
 	public boolean isAlertBarDangerDisplayed() {
