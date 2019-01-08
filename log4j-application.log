@@ -1,35 +1,33 @@
-2019-01-09 01:27:42 INFO  ExtentManager:42 - Directory already exists: target/report/
-2019-01-09 01:27:43 INFO  TestListener:19 - Extent Reports Version 4 Test Suite started!
-2019-01-09 01:27:47 INFO  TestListener:30 - addSeveralItemsToCart started!
-2019-01-09 01:27:47 INFO  TestListener:30 - buyItemsFromCart started!
-2019-01-09 01:27:47 INFO  TestListener:30 - removeLastItemFromCart started!
-2019-01-09 01:27:47 INFO  TestListener:30 - changeQuantityInCart started!
-2019-01-09 01:27:47 INFO  TestListener:30 - addItemToCart started!
-2019-01-09 01:27:55 INFO  TestListener:37 - addItemToCart passed!
-2019-01-09 01:27:56 INFO  TestListener:37 - addSeveralItemsToCart passed!
-2019-01-09 01:27:57 INFO  TestListener:30 - selectColor started!
-2019-01-09 01:27:58 INFO  TestListener:51 - removeLastItemFromCart skipped!
-2019-01-09 01:27:59 INFO  TestListener:30 - checkCountInHover started!
-2019-01-09 01:28:01 INFO  TestListener:30 - removeLastItemFromCart started!
-2019-01-09 01:28:03 INFO  TestListener:37 - selectColor passed!
-2019-01-09 01:28:04 INFO  TestListener:37 - changeQuantityInCart passed!
-2019-01-09 01:28:05 INFO  TestListener:30 - checkOut started!
-2019-01-09 01:28:07 INFO  TestListener:37 - buyItemsFromCart passed!
-2019-01-09 01:28:07 INFO  TestListener:30 - removeItemFromHover started!
-2019-01-09 01:28:09 INFO  TestListener:30 - forgotPassword started!
-2019-01-09 01:28:09 INFO  TestListener:37 - checkCountInHover passed!
-2019-01-09 01:28:11 INFO  TestListener:30 - forgotPasswordWithInvalidCredentials started!
-2019-01-09 01:28:11 INFO  TestListener:37 - removeLastItemFromCart passed!
-2019-01-09 01:28:13 INFO  TestListener:30 - signIn started!
-2019-01-09 01:28:15 INFO  TestListener:37 - forgotPassword passed!
-2019-01-09 01:28:16 INFO  TestListener:37 - checkOut passed!
-2019-01-09 01:28:17 INFO  TestListener:30 - signInWithInvalidCredentials started!
-2019-01-09 01:28:18 INFO  TestListener:37 - removeItemFromHover passed!
-2019-01-09 01:28:19 INFO  TestListener:30 - signOut started!
-2019-01-09 01:28:20 INFO  TestListener:30 - createUpdateDeleteWishlist started!
-2019-01-09 01:28:20 INFO  TestListener:37 - forgotPasswordWithInvalidCredentials passed!
-2019-01-09 01:28:21 INFO  TestListener:37 - signIn passed!
-2019-01-09 01:28:22 INFO  TestListener:37 - signInWithInvalidCredentials passed!
-2019-01-09 01:28:26 INFO  TestListener:37 - signOut passed!
-2019-01-09 01:28:35 INFO  TestListener:37 - createUpdateDeleteWishlist passed!
-2019-01-09 01:28:35 INFO  TestListener:24 - Extent Reports Version 4  Test Suite is ending!
+2019-01-09 01:49:18 INFO  ExtentManager:42 - Directory already exists: target/report/
+2019-01-09 01:49:18 INFO  TestListener:19 - Extent Reports Version 4 Test Suite started!
+2019-01-09 01:49:22 INFO  TestListener:30 - addItemToCart started!
+2019-01-09 01:49:23 INFO  TestListener:30 - removeLastItemFromCart started!
+2019-01-09 01:49:23 INFO  TestListener:30 - buyItemsFromCart started!
+2019-01-09 01:49:23 INFO  TestListener:30 - addSeveralItemsToCart started!
+2019-01-09 01:49:23 INFO  TestListener:30 - changeQuantityInCart started!
+2019-01-09 01:49:28 INFO  TestListener:37 - addItemToCart passed!
+2019-01-09 01:49:30 INFO  TestListener:30 - selectColor started!
+2019-01-09 01:49:31 INFO  TestListener:37 - addSeveralItemsToCart passed!
+2019-01-09 01:49:33 INFO  TestListener:37 - removeLastItemFromCart passed!
+2019-01-09 01:49:33 INFO  TestListener:30 - checkCountInHover started!
+2019-01-09 01:49:35 INFO  TestListener:37 - selectColor passed!
+2019-01-09 01:49:35 INFO  TestListener:30 - checkOut started!
+2019-01-09 01:49:37 INFO  TestListener:30 - removeItemFromHover started!
+2019-01-09 01:49:38 INFO  TestListener:37 - changeQuantityInCart passed!
+2019-01-09 01:49:40 INFO  TestListener:30 - forgotPassword started!
+2019-01-09 01:49:41 INFO  TestListener:37 - checkCountInHover passed!
+2019-01-09 01:49:43 INFO  TestListener:30 - forgotPasswordWithInvalidCredentials started!
+2019-01-09 01:49:43 INFO  TestListener:37 - buyItemsFromCart passed!
+2019-01-09 01:49:45 INFO  TestListener:30 - signIn started!
+2019-01-09 01:49:46 INFO  TestListener:37 - removeItemFromHover passed!
+2019-01-09 01:49:46 INFO  TestListener:37 - checkOut passed!
+2019-01-09 01:49:46 INFO  TestListener:37 - forgotPassword passed!
+2019-01-09 01:49:49 INFO  TestListener:30 - signOut started!
+2019-01-09 01:49:49 INFO  TestListener:30 - createUpdateDeleteWishlist started!
+2019-01-09 01:49:49 INFO  TestListener:30 - signInWithInvalidCredentials started!
+2019-01-09 01:49:49 INFO  TestListener:37 - forgotPasswordWithInvalidCredentials passed!
+2019-01-09 01:49:52 INFO  TestListener:37 - signIn passed!
+2019-01-09 01:49:54 INFO  TestListener:37 - signInWithInvalidCredentials passed!
+2019-01-09 01:49:56 INFO  TestListener:37 - signOut passed!
+2019-01-09 01:50:04 INFO  TestListener:37 - createUpdateDeleteWishlist passed!
+2019-01-09 01:50:04 INFO  TestListener:24 - Extent Reports Version 4  Test Suite is ending!
