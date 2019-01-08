@@ -64,7 +64,7 @@ public class SignInPage extends BasePage {
 	}
 
 	public boolean isSignOutLinkDisplayed() {
-		return isElementDisplayed(signInButton);
+		return isElementDisplayed(signOutLink);
 	}
 
 	public boolean isAlertBarDangerDisplayed() {
