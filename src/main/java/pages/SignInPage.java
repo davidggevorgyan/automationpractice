@@ -38,7 +38,7 @@ public class SignInPage extends BasePage {
 
 	@Override
 	protected void isLoaded() throws Error {
-		isElementDisplayed(signOutLink);
+		isElementDisplayed(signInLink);
 	}
 
 	public void signInWithCredentials(String email, String password) {
