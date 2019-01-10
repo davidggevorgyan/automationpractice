@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
-import static org.testng.Assert.assertTrue;
+//import static org.testng.Assert.assertTrue;
 
 
 public class ItemPage extends BasePage {
@@ -65,7 +65,7 @@ public class ItemPage extends BasePage {
 
 	@Override
 	protected void isLoaded() throws Error {
-		assertTrue(isElementDisplayed(itemSection), "The page load is failed");
+		//assertTrue(isElementDisplayed(itemSection), "The page load is failed");
 	}
 
 	public void clickAddToCart() {

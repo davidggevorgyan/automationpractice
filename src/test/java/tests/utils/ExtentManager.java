@@ -1,4 +1,4 @@
-package configs;
+package tests.utils;
 
 
 import com.aventstack.extentreports.ExtentReports;
@@ -8,8 +8,8 @@ import org.apache.log4j.Logger;
 
 import java.io.File;
 
-import static configs.DriverBase.TRAVIS_BUILD_NUMBER;
-import static configs.DriverBase.TRAVIS_BUILD_WEB_URL;
+import static setup.DriverBase.TRAVIS_BUILD_NUMBER;
+import static setup.DriverBase.TRAVIS_BUILD_WEB_URL;
 
 public class ExtentManager {
 	private final static Logger logger = Logger.getLogger(ExtentManager.class);

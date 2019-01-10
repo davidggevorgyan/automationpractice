@@ -1,17 +1,17 @@
 package pages;
 
-import configs.DriverBase;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.LoadableComponent;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import setup.DriverBase;
 
 import java.util.function.Function;
 
-import static configs.DriverBase.BASE_URL;
-import static configs.DriverBase.DEFAULT_TIMEOUT;
+import static setup.DriverBase.BASE_URL;
+import static setup.DriverBase.DEFAULT_TIMEOUT;
 
 
 public abstract class BasePage extends LoadableComponent {

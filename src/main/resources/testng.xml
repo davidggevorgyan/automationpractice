@@ -2,8 +2,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Selenium Suite">
     <listeners>
-        <listener class-name="configs.TestNG.AnnotationTransformer"/>
-        <listener class-name="configs.TestNG.TestListener"/>
+        <listener class-name="tests.testng.AnnotationTransformer"/>
+        <listener class-name="tests.testng.TestListener"/>
     </listeners>
     <test name="Automationpractice Selenium Suite" parallel="methods" thread-count="5">
         <packages>

@@ -8,8 +8,8 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
+//import static org.testng.Assert.assertEquals;
+//import static org.testng.Assert.assertTrue;
 
 public class WishlistPage extends BasePage {
 	public void create(String wishlistName) {
@@ -36,8 +36,8 @@ public class WishlistPage extends BasePage {
 
 	@Override
 	protected void isLoaded() throws Error {
-		assertTrue(isElementDisplayed(myWhishlistHeader), "The page load is failed");
-		assertEquals(myWhishlistHeader.getText(), "MY WISHLISTS", "The page load is failed");
+		//assertTrue(isElementDisplayed(myWhishlistHeader), "The page load is failed");
+		//assertEquals(myWhishlistHeader.getText(), "MY WISHLISTS", "The page load is failed");
 	}
 
 	public boolean isWishlistPresent(String wishlistName) {

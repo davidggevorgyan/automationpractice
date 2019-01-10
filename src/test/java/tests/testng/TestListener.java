@@ -1,13 +1,13 @@
-package configs.TestNG;
+package tests.testng;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import configs.DriverBase;
-import configs.ExtentManager;
 import org.apache.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import setup.DriverBase;
+import tests.utils.ExtentManager;
 
 public class TestListener implements ITestListener {
 	private final static Logger logger = Logger.getLogger(TestListener.class);

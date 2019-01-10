@@ -5,11 +5,11 @@ import pages.ItemPage;
 import pages.SignInPage;
 import pages.WishlistPage;
 
-import static configs.DriverBase.LOGIN;
-import static configs.DriverBase.PASSWORD;
 import static java.util.UUID.randomUUID;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
+import static setup.DriverBase.LOGIN;
+import static setup.DriverBase.PASSWORD;
 
 public class WishlistTest extends BaseTest {
 	@Test

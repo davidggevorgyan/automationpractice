@@ -1,4 +1,4 @@
-package configs;
+package setup;
 
 
 import org.openqa.selenium.WebDriver;
@@ -19,8 +19,8 @@ public class DriverBase {
 	private static final String HOST_URL = System.getProperty("selenium.hostURL", "http://localhost:4444/wd/hub");
 	public static final String LOGIN = System.getProperty("selenium.login", "d1@grr.la");
 	public static final String PASSWORD = System.getProperty("selenium.password", "d1@grr.la");
-	static final String TRAVIS_BUILD_NUMBER = System.getProperty("travis.buildNumber", "LocalRun");
-	static final String TRAVIS_BUILD_WEB_URL = System.getProperty("travis.buildURL", "localhost");
+	public static final String TRAVIS_BUILD_NUMBER = System.getProperty("travis.buildNumber", "LocalRun");
+	public static final String TRAVIS_BUILD_WEB_URL = System.getProperty("travis.buildURL", "localhost");
 	private static final ThreadLocal<WebDriver> driverThread = new ThreadLocal<>();
 
 	public static DriverBase get() {
@@ -43,27 +43,20 @@ public class DriverBase {
 					}
 					break;
 				case "cloud":
+					DesiredCapabilities caps = new DesiredCapabilities();
+					caps.setCapability("os", "Windows");
+					caps.setCapability("os_version", "10");
+					caps.setCapability("resolution", "1920x1080");
+					caps.setCapability("name", testName);
+					caps.setCapability("project", "automationpractice");
 					if (BROWSER.equals("firefox")) {
-						DesiredCapabilities caps = new DesiredCapabilities();
 						caps.setCapability("browser", "Firefox");
 						caps.setCapability("browser_version", "64.0");
-						caps.setCapability("os", "Windows");
-						caps.setCapability("os_version", "10");
-						caps.setCapability("resolution", "1920x1080");
-						caps.setCapability("name", testName);
-						caps.setCapability("project", "automationpractice");
-						driver = initRemoteDriver(caps);
 					} else {
-						DesiredCapabilities caps = new DesiredCapabilities();
 						caps.setCapability("browser", "Chrome");
 						caps.setCapability("browser_version", "71.0");
-						caps.setCapability("os", "Windows");
-						caps.setCapability("os_version", "10");
-						caps.setCapability("resolution", "1920x1080");
-						caps.setCapability("name", testName);
-						caps.setCapability("project", "automationpractice");
-						driver = initRemoteDriver(caps);
 					}
+					driver = initRemoteDriver(caps);
 					break;
 				default:
 					if (BROWSER.equals("firefox")) {

@@ -4,7 +4,7 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import static org.testng.Assert.assertTrue;
+//TODO refactor import static org.testng.Assert.assertTrue;
 
 
 public class SignInPage extends BasePage {
@@ -78,6 +78,6 @@ public class SignInPage extends BasePage {
 
 	@Override
 	protected void isLoaded() throws Error {
-		assertTrue(isElementDisplayed(signInButton), "The page load is failed");
+		//assertTrue(isElementDisplayed(signInButton), "The page load is failed");
 	}
 }

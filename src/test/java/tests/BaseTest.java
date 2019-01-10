@@ -1,8 +1,8 @@
 package tests;
 
-import configs.DriverBase;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import setup.DriverBase;
 
 import java.lang.reflect.Method;
 

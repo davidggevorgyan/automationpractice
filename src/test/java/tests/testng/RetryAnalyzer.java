@@ -1,4 +1,4 @@
-package configs.TestNG;
+package tests.testng;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
