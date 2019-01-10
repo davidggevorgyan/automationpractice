@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-//import static org.testng.Assert.assertTrue;
 
 public class CartHoverPage extends BasePage {
 	@FindBy(className = "shopping_cart")
@@ -25,7 +24,7 @@ public class CartHoverPage extends BasePage {
 
 	@Override
 	protected void isLoaded() throws Error {
-		//assertTrue(isElementDisplayed(cartHover), "The page load is failed");
+		isElementDisplayed(cartHover);
 	}
 
 	private WebElement getCartHoverItem(String productName) {

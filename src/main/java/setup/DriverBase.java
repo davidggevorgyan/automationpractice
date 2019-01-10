@@ -21,7 +21,7 @@ public class DriverBase {
 	public static final String PASSWORD = System.getProperty("selenium.password", "d1@grr.la");
 	public static final String TRAVIS_BUILD_NUMBER = System.getProperty("travis.buildNumber", "LocalRun");
 	public static final String TRAVIS_BUILD_WEB_URL = System.getProperty("travis.buildURL", "localhost");
-	private static final ThreadLocal<WebDriver> driverThread = new ThreadLocal<>();
+	private final ThreadLocal<WebDriver> driverThread = new ThreadLocal<>();
 
 	public static DriverBase get() {
 		return DriverBaseHolder.HOLDER_INSTANCE;

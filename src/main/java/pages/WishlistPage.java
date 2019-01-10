@@ -36,8 +36,7 @@ public class WishlistPage extends BasePage {
 
 	@Override
 	protected void isLoaded() throws Error {
-		//assertTrue(isElementDisplayed(myWhishlistHeader), "The page load is failed");
-		//assertEquals(myWhishlistHeader.getText(), "MY WISHLISTS", "The page load is failed");
+		isElementDisplayed(myWhishlistHeader);
 	}
 
 	public boolean isWishlistPresent(String wishlistName) {

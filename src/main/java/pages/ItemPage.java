@@ -1,15 +1,11 @@
 package pages;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
-
-//import static org.testng.Assert.assertTrue;
-
 
 public class ItemPage extends BasePage {
 	@FindBy(className = "primary_block")
@@ -65,7 +61,7 @@ public class ItemPage extends BasePage {
 
 	@Override
 	protected void isLoaded() throws Error {
-		//assertTrue(isElementDisplayed(itemSection), "The page load is failed");
+		isElementDisplayed(itemSection);
 	}
 
 	public void clickAddToCart() {

@@ -1,11 +1,7 @@
 package pages;
 
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-//TODO refactor import static org.testng.Assert.assertTrue;
-
 
 public class SignInPage extends BasePage {
 	@FindBy(id = "email")
@@ -40,6 +36,10 @@ public class SignInPage extends BasePage {
 		super("index.php?controller=authentication&back=my-account");
 	}
 
+	@Override
+	protected void isLoaded() throws Error {
+		isElementDisplayed(signOutLink);
+	}
 
 	public void signInWithCredentials(String email, String password) {
 		emailField.sendKeys(email);
@@ -75,9 +75,4 @@ public class SignInPage extends BasePage {
 		return isElementDisplayed(alertBarSuccess);
 	}
 
-
-	@Override
-	protected void isLoaded() throws Error {
-		//assertTrue(isElementDisplayed(signInButton), "The page load is failed");
-	}
 }
