@@ -1,6 +1,7 @@
 package setup;
 
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -21,6 +22,7 @@ public class DriverBase {
 	public static final String PASSWORD = System.getProperty("selenium.password", "d1@grr.la");
 	public static final String TRAVIS_BUILD_NUMBER = System.getProperty("travis.buildNumber", "LocalRun");
 	public static final String TRAVIS_BUILD_WEB_URL = System.getProperty("travis.buildURL", "localhost");
+	private final static Logger logger = Logger.getLogger(DriverBase.class);
 	private final ThreadLocal<WebDriver> driverThread = new ThreadLocal<>();
 
 	public static DriverBase get() {
@@ -86,7 +88,7 @@ public class DriverBase {
 		try {
 			remoteDriver = new RemoteWebDriver(new URL(HOST_URL), capability);
 		} catch (MalformedURLException e) {
-			e.printStackTrace();
+			logger.error("Failed to initialize remote driver", e);
 		}
 
 		return remoteDriver;
