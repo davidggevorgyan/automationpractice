@@ -3,29 +3,27 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.LoadableComponent;
+import setup.Action;
 import setup.DriverBase;
-import setup.Wait;
 
 import static setup.Properties.BASE_URL;
 
 
-public abstract class BasePage extends LoadableComponent {
+public abstract class BasePage<T extends LoadableComponent<T>> extends LoadableComponent<T> {
 	private String pageUrl;
 	private WebDriver driver;
-	private Wait wait;
+	private Action action;
 
 
 	BasePage(String pageUrl) {
 		this.pageUrl = pageUrl;
 		this.driver = DriverBase.get().getDriver();
-		this.wait = new Wait(driver);
+		this.action = new Action(driver);
 		PageFactory.initElements(driver, this);
-		this.load();
-		this.isLoaded();
 	}
 
-	Wait getWait() {
-		return wait;
+	Action getActions() {
+		return action;
 	}
 
 	@Override
@@ -36,6 +34,14 @@ public abstract class BasePage extends LoadableComponent {
 			driver.get(BASE_URL + pageUrl);
 		}
 	}
+
+	@Override
+	protected void isLoaded() throws Error {
+		if (!this.driver.getCurrentUrl().contains(pageUrl) && getActions().isPageReady()) {
+			throw new Error(action.getCurrentUrl() + " is not loaded");
+		}
+	}
+
 
 
 }

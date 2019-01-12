@@ -9,11 +9,9 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
 
-public class WishlistPage extends BasePage {
-	public void create(String wishlistName) {
-		getWait().type(newWishlistNameField, wishlistName);
-		getWait().click(submitNewWishlistButton);
-	}
+public class WishlistPage extends BasePage<WishlistPage> {
+	@FindBy(xpath = "//*[@id=\"best-sellers_block_right\"]/div/ul/li[1]/a")
+	private WebElement firstTopSellingItem;
 
 	@FindBy(className = "page-heading")
 	private WebElement myWhishlistHeader;
@@ -27,28 +25,27 @@ public class WishlistPage extends BasePage {
 	@FindBy(className = "table")
 	private WebElement wishlistTable;
 
-
-	public WishlistPage() {
+	WishlistPage() {
 		super("index.php?fc=module&module=blockwishlist&controller=mywishlist");
 	}
 
-	@Override
-	protected void isLoaded() throws Error {
-		getWait().isElementDisplayed(myWhishlistHeader);
+	public void create(String wishlistName) {
+		getActions().type(newWishlistNameField, wishlistName);
+		getActions().click(submitNewWishlistButton);
 	}
 
 	public boolean isWishlistPresent(String wishlistName) {
-		getWait().isElementDisplayed(wishlistTable);
+		getActions().isElementDisplayed(wishlistTable);
 		return getCell(wishlistName, Column.NAME) != null;
 	}
 
 	public boolean deletelWishlist(String wishlistName) {
-		getWait().isElementDisplayed(wishlistTable);
+		getActions().isElementDisplayed(wishlistTable);
 		WebElement wishlistDeleteButton = getCell(wishlistName, Column.DELETE);
 		wishlistDeleteButton.findElement(By.className("icon-remove")).click();
-		Alert popup = getWait().switchToAlert();
+		Alert popup = getActions().switchToAlert();
 		popup.accept();
-		return getWait().isElementNotDisplayed(wishlistDeleteButton);
+		return getActions().isElementNotDisplayed(wishlistDeleteButton);
 	}
 
 	private WebElement getCell(String wishlistName, Column columnName) {
@@ -64,6 +61,11 @@ public class WishlistPage extends BasePage {
 		throw new NoSuchElementException("Unable to locate {" + wishlistName + "} wishlist");
 	}
 
+	public ItemPage openFirstTopSellingItem() {
+		getActions().click(firstTopSellingItem);
+		getActions().isPageReady();
+		return new ItemPage();
+	}
 
 	enum Column {
 		NAME(1),

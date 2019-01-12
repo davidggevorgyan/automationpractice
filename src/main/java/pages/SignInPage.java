@@ -3,7 +3,7 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class SignInPage extends BasePage {
+public class SignInPage extends BasePage<SignInPage> {
 	@FindBy(id = "email")
 	private WebElement emailField;
 
@@ -28,51 +28,55 @@ public class SignInPage extends BasePage {
 	@FindBy(className = "alert-success")
 	private WebElement alertBarSuccess;
 
-
 	@FindBy(css = "#form_forgotpassword > fieldset > p > button")
 	private WebElement retrievePasswordButton;
+
+	@FindBy(className = "lnk_wishlist")
+	private WebElement wishListButton;
+
 
 	public SignInPage() {
 		super("index.php?controller=authentication&back=my-account");
 	}
 
-	@Override
-	protected void isLoaded() throws Error {
-		getWait().isElementDisplayed(signInLink);
-	}
 
 	public void signInWithCredentials(String email, String password) {
 		emailField.sendKeys(email);
 		passwordField.sendKeys(password);
-		getWait().click(signInButton);
+		getActions().click(signInButton);
 	}
 
 	public void forgotPasswordWithEmail(String email) {
-		getWait().click(forgotPasswordLink);
+		getActions().click(forgotPasswordLink);
 		emailField.sendKeys(email);
-		getWait().click(retrievePasswordButton);
+		getActions().click(retrievePasswordButton);
 	}
 
 
 	public void signOut() {
-		getWait().click(signOutLink);
+		getActions().click(signOutLink);
 
 	}
 
 	public boolean isSignInLinkDisplayed() {
-		return getWait().isElementDisplayed(signInButton);
+		return getActions().isElementDisplayed(signInButton);
 	}
 
 	public boolean isSignOutLinkDisplayed() {
-		return getWait().isElementDisplayed(signOutLink);
+		return getActions().isElementDisplayed(signOutLink);
 	}
 
 	public boolean isAlertBarDangerDisplayed() {
-		return getWait().isElementDisplayed(alertBarDanger);
+		return getActions().isElementDisplayed(alertBarDanger);
 	}
 
 	public boolean isAlertBarSuccessDisplayed() {
-		return getWait().isElementDisplayed(alertBarSuccess);
+		return getActions().isElementDisplayed(alertBarSuccess);
 	}
 
+	public WishlistPage openWishListPage() {
+		getActions().click(wishListButton);
+		getActions().isPageReady();
+		return new WishlistPage();
+	}
 }

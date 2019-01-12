@@ -58,11 +58,11 @@ public class CheckOutPage extends BasePage {
 
 	@Override
 	protected void isLoaded() throws Error {
-		getWait().isElementDisplayed(proceedToStep2);
+		getActions().isElementDisplayed(proceedToStep2);
 	}
 
 	public int getItemsInCart() {
-		getWait().isElementDisplayed(itemsInCart);
+		getActions().isElementDisplayed(itemsInCart);
 		return Integer.parseInt(itemsInCart.getText().replaceAll("[^0-9]", ""));
 	}
 
@@ -80,8 +80,8 @@ public class CheckOutPage extends BasePage {
 	public void pressIncreaseQuantity(String itemName) {
 		String originalText = itemsInCart.getText();
 		WebElement quantity = getItem(itemName, Column.QTY);
-		getWait().click(quantity.findElement(By.className("icon-plus")));
-		getWait().isElementTextChanged(itemsInCart, originalText);
+		getActions().click(quantity.findElement(By.className("icon-plus")));
+		getActions().isElementTextChanged(itemsInCart, originalText);
 	}
 
 
@@ -89,26 +89,26 @@ public class CheckOutPage extends BasePage {
 		String originalText = itemsInCart.getText();
 		WebElement quantity = getItem(itemName, Column.QTY);
 		int originalQuantity = Integer.valueOf(quantity.findElement(By.tagName("input")).getAttribute("value"));
-		getWait().click(quantity.findElement(By.className("icon-minus")));
+		getActions().click(quantity.findElement(By.className("icon-minus")));
 		if (originalQuantity != 1) {
-			getWait().isElementTextChanged(itemsInCart, originalText);
+			getActions().isElementTextChanged(itemsInCart, originalText);
 		}
 	}
 
 	public boolean isCartEmpty() {
-		return getWait().isElementDisplayed(emptyCart);
+		return getActions().isElementDisplayed(emptyCart);
 	}
 
 	public boolean purchase() {
-		getWait().click(proceedToStep2);
-		getWait().type(emailField, LOGIN);
-		getWait().type(passwordField, PASSWORD);
-		getWait().click(signInButton);
-		getWait().click(proceedToStep4);
-		getWait().click(termsOfServiceCheckobx);
-		getWait().click(proceedToStep5);
-		getWait().click(payBankWire);
-		getWait().click(completeOrder);
+		getActions().click(proceedToStep2);
+		getActions().type(emailField, LOGIN);
+		getActions().type(passwordField, PASSWORD);
+		getActions().click(signInButton);
+		getActions().click(proceedToStep4);
+		getActions().click(termsOfServiceCheckobx);
+		getActions().click(proceedToStep5);
+		getActions().click(payBankWire);
+		getActions().click(completeOrder);
 		return successMessage.getText().contains("is complete");
 	}
 

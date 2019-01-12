@@ -8,21 +8,21 @@ import static org.testng.Assert.*;
 public class ItemTest extends BaseTest {
 	@Test
 	public void addItemToCart() {
-		ItemPage itemPage = new ItemPage();
+		ItemPage itemPage = new ItemPage().get();
 		itemPage.clickAddToCart();
 		assertTrue(itemPage.isCheckoutFrameDisplayed(), "Checkout popup was not displayed");
 	}
 
 	@Test(enabled = false)
 	public void exampleOfDisabledFailingTest() {
-		ItemPage itemPage = new ItemPage();
+		ItemPage itemPage = new ItemPage().get();
 		itemPage.clickAddToCart();
 		assertFalse(itemPage.isCheckoutFrameDisplayed(), "Checkout popup was not displayed");
 	}
 
 	@Test
 	public void addSeveralItemsToCart() {
-		ItemPage itemPage = new ItemPage();
+		ItemPage itemPage = new ItemPage().get();
 		itemPage.setQuantity(3);
 		itemPage.setSize("M");
 		itemPage.setColor("Orange");
@@ -35,7 +35,7 @@ public class ItemTest extends BaseTest {
 
 	@Test
 	public void selectColor() {
-		ItemPage itemPage = new ItemPage();
+		ItemPage itemPage = new ItemPage().get();
 		itemPage.setColor("Blue");
 		assertEquals("http://automationpractice.com/index.php?id_product=5&controller=product#/size-s/color-blue", itemPage.getUrl(), "Images are not filtered based on color");
 	}

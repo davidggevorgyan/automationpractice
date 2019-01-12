@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
-public class ItemPage extends BasePage {
+public class ItemPage extends BasePage<ItemPage> {
 	@FindBy(className = "primary_block")
 	private WebElement itemSection;
 
@@ -59,32 +59,27 @@ public class ItemPage extends BasePage {
 		super(url);
 	}
 
-	@Override
-	protected void isLoaded() throws Error {
-		getWait().isElementDisplayed(itemSection);
-	}
-
 	public void clickAddToCart() {
-		getWait().click(addToCartButton);
-		getWait().isElementDisplayed(proceedToCheckoutButton);
+		getActions().click(addToCartButton);
+		getActions().isElementDisplayed(proceedToCheckoutButton);
 	}
 
 	public void clickAddToWishlist() {
-		getWait().click(addToWishlist);
+		getActions().click(addToWishlist);
 	}
 
 	public boolean isCheckoutFrameDisplayed() {
-		return getWait().isElementDisplayed(cartFrame);
+		return getActions().isElementDisplayed(cartFrame);
 	}
 
 
 	public void setQuantity(int count) {
 		quantityField.clear();
-		getWait().type(quantityField, String.valueOf(count));
+		getActions().type(quantityField, String.valueOf(count));
 	}
 
 	public int getQuantityFromCartFrame() {
-		getWait().isElementDisplayed(cartFrame);
+		getActions().isElementDisplayed(cartFrame);
 		return Integer.parseInt(quantityInCartFrame.getText());
 	}
 
@@ -94,7 +89,7 @@ public class ItemPage extends BasePage {
 	}
 
 	public String getSizeFromCartFrame() {
-		getWait().isElementDisplayed(cartFrame);
+		getActions().isElementDisplayed(cartFrame);
 		return sizeAndColorInCartFrame.getText().substring(sizeAndColorInCartFrame.getText().length() - 1);
 	}
 
@@ -102,38 +97,38 @@ public class ItemPage extends BasePage {
 		List<WebElement> colors = colorOptions.findElements(By.xpath(".//*"));
 		for (WebElement li : colors) {
 			if (li.getAttribute("title").equals(color)) {
-				getWait().click(li);
+				getActions().click(li);
 			}
 		}
 	}
 
 	public String getColorFromCartFrame() {
-		getWait().isElementDisplayed(cartFrame);
+		getActions().isElementDisplayed(cartFrame);
 		return sizeAndColorInCartFrame.getText().substring(0, sizeAndColorInCartFrame.getText().length() - 3);
 	}
 
 	public double getPrice() {
-		getWait().isElementDisplayed(cartFrame);
+		getActions().isElementDisplayed(cartFrame);
 		return Double.parseDouble(price.getText().substring(1));
 	}
 
 	public double getPriceFromCartFrame() {
-		getWait().isElementDisplayed(cartFrame);
+		getActions().isElementDisplayed(cartFrame);
 		return Double.parseDouble(priceInCartFrame.getText().substring(1));
 	}
 
 	public String getFancyBoxText() {
-		getWait().isElementDisplayed(fancyBox);
+		getActions().isElementDisplayed(fancyBox);
 		return fancyBox.getText();
 	}
 
 	public String getUrl() {
-		return getWait().getCurrentUrl();
+		return getActions().getCurrentUrl();
 	}
 
 	public void closeCartFrame() {
-		getWait().click(closeCartFrame);
-		getWait().isElementNotDisplayed(cartFrame);
+		getActions().click(closeCartFrame);
+		getActions().isElementNotDisplayed(cartFrame);
 	}
 
 }

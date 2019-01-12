@@ -24,7 +24,7 @@ public class CartHoverPage extends BasePage {
 
 	@Override
 	protected void isLoaded() throws Error {
-		getWait().isElementDisplayed(cartHover);
+		getActions().isElementDisplayed(cartHover);
 	}
 
 	private WebElement getCartHoverItem(String productName) {
@@ -47,13 +47,13 @@ public class CartHoverPage extends BasePage {
 
 	public boolean removeItemFromCart(String productName) {
 		WebElement itemToRemove = getCartHoverItem(productName).findElement(By.className("remove_link"));
-		getWait().hover().moveToElement(enableHoverElement).build().perform();
-		getWait().click(itemToRemove);
-		return getWait().isElementNotDisplayed(itemToRemove);
+		getActions().hover().moveToElement(enableHoverElement).build().perform();
+		getActions().click(itemToRemove);
+		return getActions().isElementNotDisplayed(itemToRemove);
 	}
 
 	public void checkOut() {
-		getWait().hover().moveToElement(enableHoverElement).build().perform();
-		getWait().click(checkOutButton);
+		getActions().hover().moveToElement(enableHoverElement).build().perform();
+		getActions().click(checkOutButton);
 	}
 }

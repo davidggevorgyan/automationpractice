@@ -1,7 +1,6 @@
 package setup;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -9,11 +8,11 @@ import java.util.function.Function;
 
 import static setup.Properties.DEFAULT_TIMEOUT;
 
-public class Wait {
+public class Action {
 
 	private final WebDriver driver;
 
-	public Wait(WebDriver driver) {
+	public Action(WebDriver driver) {
 		this.driver = driver;
 	}
 
@@ -54,19 +53,24 @@ public class Wait {
 		return isElementNotDisplayed(element, DEFAULT_TIMEOUT);
 	}
 
-	void isElementTextChanged(WebElement element, String originalText, Integer timeout) {
-		WebDriverWait wait = new WebDriverWait(driver, timeout);
-		wait.until(new Function<WebDriver, Boolean>() {
+	boolean isElementTextChanged(WebElement element, String originalText, Integer timeout) {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, timeout);
+			wait.until(new Function<WebDriver, Boolean>() {
 			String initialText = originalText;
 
 			public Boolean apply(WebDriver driver) {
 				return !element.getText().equals(initialText);
 			}
-		});
+			});
+		} catch (WebDriverException e) {
+			return false;
+		}
+		return true;
 	}
 
-	public void isElementTextChanged(WebElement element, String originalText) {
-		isElementTextChanged(element, originalText, DEFAULT_TIMEOUT);
+	public boolean isElementTextChanged(WebElement element, String originalText) {
+		return isElementTextChanged(element, originalText, DEFAULT_TIMEOUT);
 	}
 
 	void type(WebElement element, String text, Integer timeout) {
@@ -86,8 +90,18 @@ public class Wait {
 		return driver.switchTo().alert();
 	}
 
-	public Actions hover() {
-		return new Actions(driver);
+	public org.openqa.selenium.interactions.Actions hover() {
+		return new org.openqa.selenium.interactions.Actions(driver);
+	}
+
+	public boolean isPageReady() {
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, DEFAULT_TIMEOUT);
+			wait.until(webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
+		} catch (WebDriverException e) {
+			return false;
+		}
+		return true;
 	}
 
 }
