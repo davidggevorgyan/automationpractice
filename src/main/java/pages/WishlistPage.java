@@ -13,8 +13,8 @@ import java.util.List;
 
 public class WishlistPage extends BasePage {
 	public void create(String wishlistName) {
-		type(newWishlistNameField, wishlistName);
-		click(submitNewWishlistButton);
+		getWait().type(newWishlistNameField, wishlistName);
+		getWait().click(submitNewWishlistButton);
 	}
 
 	@FindBy(className = "page-heading")
@@ -36,21 +36,21 @@ public class WishlistPage extends BasePage {
 
 	@Override
 	protected void isLoaded() throws Error {
-		isElementDisplayed(myWhishlistHeader);
+		getWait().isElementDisplayed(myWhishlistHeader);
 	}
 
 	public boolean isWishlistPresent(String wishlistName) {
-		isElementDisplayed(wishlistTable);
+		getWait().isElementDisplayed(wishlistTable);
 		return getCell(wishlistName, Column.NAME) != null;
 	}
 
 	public boolean deletelWishlist(String wishlistName) {
-		isElementDisplayed(wishlistTable);
+		getWait().isElementDisplayed(wishlistTable);
 		WebElement wishlistDeleteButton = getCell(wishlistName, Column.DELETE);
 		wishlistDeleteButton.findElement(By.className("icon-remove")).click();
-		Alert popup = switchToAlert();
+		Alert popup = getWait().switchToAlert();
 		popup.accept();
-		return isElementNotDisplayed(wishlistDeleteButton);
+		return getWait().isElementNotDisplayed(wishlistDeleteButton);
 	}
 
 	private WebElement getCell(String wishlistName, Column columnName) {
