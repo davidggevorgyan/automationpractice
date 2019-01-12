@@ -38,41 +38,41 @@ public class SignInPage extends BasePage {
 
 	@Override
 	protected void isLoaded() throws Error {
-		isElementDisplayed(signInLink);
+		getWait().isElementDisplayed(signInLink);
 	}
 
 	public void signInWithCredentials(String email, String password) {
 		emailField.sendKeys(email);
 		passwordField.sendKeys(password);
-		click(signInButton);
+		getWait().click(signInButton);
 	}
 
 	public void forgotPasswordWithEmail(String email) {
-		click(forgotPasswordLink);
+		getWait().click(forgotPasswordLink);
 		emailField.sendKeys(email);
-		click(retrievePasswordButton);
+		getWait().click(retrievePasswordButton);
 	}
 
 
 	public void signOut() {
-		click(signOutLink);
+		getWait().click(signOutLink);
 
 	}
 
 	public boolean isSignInLinkDisplayed() {
-		return isElementDisplayed(signInButton);
+		return getWait().isElementDisplayed(signInButton);
 	}
 
 	public boolean isSignOutLinkDisplayed() {
-		return isElementDisplayed(signOutLink);
+		return getWait().isElementDisplayed(signOutLink);
 	}
 
 	public boolean isAlertBarDangerDisplayed() {
-		return isElementDisplayed(alertBarDanger);
+		return getWait().isElementDisplayed(alertBarDanger);
 	}
 
 	public boolean isAlertBarSuccessDisplayed() {
-		return isElementDisplayed(alertBarSuccess);
+		return getWait().isElementDisplayed(alertBarSuccess);
 	}
 
 }

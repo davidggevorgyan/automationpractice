@@ -61,30 +61,30 @@ public class ItemPage extends BasePage {
 
 	@Override
 	protected void isLoaded() throws Error {
-		isElementDisplayed(itemSection);
+		getWait().isElementDisplayed(itemSection);
 	}
 
 	public void clickAddToCart() {
-		click(addToCartButton);
-		isElementDisplayed(proceedToCheckoutButton);
+		getWait().click(addToCartButton);
+		getWait().isElementDisplayed(proceedToCheckoutButton);
 	}
 
 	public void clickAddToWishlist() {
-		click(addToWishlist);
+		getWait().click(addToWishlist);
 	}
 
 	public boolean isCheckoutFrameDisplayed() {
-		return isElementDisplayed(cartFrame);
+		return getWait().isElementDisplayed(cartFrame);
 	}
 
 
 	public void setQuantity(int count) {
 		quantityField.clear();
-		type(quantityField, String.valueOf(count));
+		getWait().type(quantityField, String.valueOf(count));
 	}
 
 	public int getQuantityFromCartFrame() {
-		isElementDisplayed(cartFrame);
+		getWait().isElementDisplayed(cartFrame);
 		return Integer.parseInt(quantityInCartFrame.getText());
 	}
 
@@ -94,7 +94,7 @@ public class ItemPage extends BasePage {
 	}
 
 	public String getSizeFromCartFrame() {
-		isElementDisplayed(cartFrame);
+		getWait().isElementDisplayed(cartFrame);
 		return sizeAndColorInCartFrame.getText().substring(sizeAndColorInCartFrame.getText().length() - 1);
 	}
 
@@ -102,38 +102,38 @@ public class ItemPage extends BasePage {
 		List<WebElement> colors = colorOptions.findElements(By.xpath(".//*"));
 		for (WebElement li : colors) {
 			if (li.getAttribute("title").equals(color)) {
-				click(li);
+				getWait().click(li);
 			}
 		}
 	}
 
 	public String getColorFromCartFrame() {
-		isElementDisplayed(cartFrame);
+		getWait().isElementDisplayed(cartFrame);
 		return sizeAndColorInCartFrame.getText().substring(0, sizeAndColorInCartFrame.getText().length() - 3);
 	}
 
 	public double getPrice() {
-		isElementDisplayed(cartFrame);
+		getWait().isElementDisplayed(cartFrame);
 		return Double.parseDouble(price.getText().substring(1));
 	}
 
 	public double getPriceFromCartFrame() {
-		isElementDisplayed(cartFrame);
+		getWait().isElementDisplayed(cartFrame);
 		return Double.parseDouble(priceInCartFrame.getText().substring(1));
 	}
 
 	public String getFancyBoxText() {
-		isElementDisplayed(fancyBox);
+		getWait().isElementDisplayed(fancyBox);
 		return fancyBox.getText();
 	}
 
 	public String getUrl() {
-		return getCurrentUrl();
+		return getWait().getCurrentUrl();
 	}
 
 	public void closeCartFrame() {
-		click(closeCartFrame);
-		isElementNotDisplayed(cartFrame);
+		getWait().click(closeCartFrame);
+		getWait().isElementNotDisplayed(cartFrame);
 	}
 
 }

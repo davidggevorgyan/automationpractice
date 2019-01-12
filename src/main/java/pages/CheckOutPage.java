@@ -7,8 +7,8 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-import static setup.DriverBase.LOGIN;
-import static setup.DriverBase.PASSWORD;
+import static setup.Properties.LOGIN;
+import static setup.Properties.PASSWORD;
 
 public class CheckOutPage extends BasePage {
 	@FindBy(css = "[href*='order&step=1']")
@@ -58,11 +58,11 @@ public class CheckOutPage extends BasePage {
 
 	@Override
 	protected void isLoaded() throws Error {
-		isElementDisplayed(proceedToStep2);
+		getWait().isElementDisplayed(proceedToStep2);
 	}
 
 	public int getItemsInCart() {
-		isElementDisplayed(itemsInCart);
+		getWait().isElementDisplayed(itemsInCart);
 		return Integer.parseInt(itemsInCart.getText().replaceAll("[^0-9]", ""));
 	}
 
@@ -80,8 +80,8 @@ public class CheckOutPage extends BasePage {
 	public void pressIncreaseQuantity(String itemName) {
 		String originalText = itemsInCart.getText();
 		WebElement quantity = getItem(itemName, Column.QTY);
-		click(quantity.findElement(By.className("icon-plus")));
-		isElementTextChanged(itemsInCart, originalText);
+		getWait().click(quantity.findElement(By.className("icon-plus")));
+		getWait().isElementTextChanged(itemsInCart, originalText);
 	}
 
 
@@ -89,26 +89,26 @@ public class CheckOutPage extends BasePage {
 		String originalText = itemsInCart.getText();
 		WebElement quantity = getItem(itemName, Column.QTY);
 		int originalQuantity = Integer.valueOf(quantity.findElement(By.tagName("input")).getAttribute("value"));
-		click(quantity.findElement(By.className("icon-minus")));
+		getWait().click(quantity.findElement(By.className("icon-minus")));
 		if (originalQuantity != 1) {
-			isElementTextChanged(itemsInCart, originalText);
+			getWait().isElementTextChanged(itemsInCart, originalText);
 		}
 	}
 
 	public boolean isCartEmpty() {
-		return isElementDisplayed(emptyCart);
+		return getWait().isElementDisplayed(emptyCart);
 	}
 
 	public boolean purchase() {
-		click(proceedToStep2);
-		type(emailField, LOGIN);
-		type(passwordField, PASSWORD);
-		click(signInButton);
-		click(proceedToStep4);
-		click(termsOfServiceCheckobx);
-		click(proceedToStep5);
-		click(payBankWire);
-		click(completeOrder);
+		getWait().click(proceedToStep2);
+		getWait().type(emailField, LOGIN);
+		getWait().type(passwordField, PASSWORD);
+		getWait().click(signInButton);
+		getWait().click(proceedToStep4);
+		getWait().click(termsOfServiceCheckobx);
+		getWait().click(proceedToStep5);
+		getWait().click(payBankWire);
+		getWait().click(completeOrder);
 		return successMessage.getText().contains("is complete");
 	}
 
