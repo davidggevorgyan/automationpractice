@@ -4,8 +4,8 @@ import org.testng.annotations.Test;
 import pages.SignInPage;
 
 import static org.testng.Assert.assertTrue;
-import static setup.DriverBase.LOGIN;
-import static setup.DriverBase.PASSWORD;
+import static setup.Properties.LOGIN;
+import static setup.Properties.PASSWORD;
 
 public class SignInTest extends BaseTest {
 

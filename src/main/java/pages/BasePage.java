@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.LoadableComponent;
 import setup.DriverBase;
 import setup.Wait;
 
-import static setup.DriverBase.BASE_URL;
+import static setup.Properties.BASE_URL;
 
 
 public abstract class BasePage extends LoadableComponent {
