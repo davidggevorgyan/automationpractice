@@ -131,4 +131,10 @@ public class ItemPage extends BasePage<ItemPage> {
 		getActions().isElementNotDisplayed(cartFrame);
 	}
 
+	public CheckOutPage clickCheckout() {
+		getActions().click(proceedToCheckoutButton);
+		CheckOutPage checkOutPage = new CheckOutPage();
+		checkOutPage.isLoaded();
+		return new CheckOutPage();
+	}
 }

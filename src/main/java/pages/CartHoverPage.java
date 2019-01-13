@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
 
-public class CartHoverPage extends BasePage {
+public class CartHoverPage extends BasePage<CartHoverPage> {
 	@FindBy(className = "shopping_cart")
 	private WebElement cartHover;
 
@@ -20,11 +20,6 @@ public class CartHoverPage extends BasePage {
 
 	public CartHoverPage() {
 		super("index.php?id_product=2&controller=product");
-	}
-
-	@Override
-	protected void isLoaded() throws Error {
-		getActions().isElementDisplayed(cartHover);
 	}
 
 	private WebElement getCartHoverItem(String productName) {

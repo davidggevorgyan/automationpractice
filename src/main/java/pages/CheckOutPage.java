@@ -10,7 +10,7 @@ import java.util.List;
 import static setup.Properties.LOGIN;
 import static setup.Properties.PASSWORD;
 
-public class CheckOutPage extends BasePage {
+public class CheckOutPage extends BasePage<CheckOutPage> {
 	@FindBy(css = "[href*='order&step=1']")
 	private WebElement proceedToStep2;
 
@@ -32,7 +32,6 @@ public class CheckOutPage extends BasePage {
 	@FindBy(css = "#center_column > div")
 	private WebElement successMessage;
 
-
 	@FindBy(id = "summary_products_quantity")
 	private WebElement itemsInCart;
 
@@ -51,14 +50,8 @@ public class CheckOutPage extends BasePage {
 	@FindBy(id = "SubmitLogin")
 	private WebElement signInButton;
 
-
 	public CheckOutPage() {
 		super("index.php?controller=order");
-	}
-
-	@Override
-	protected void isLoaded() throws Error {
-		getActions().isElementDisplayed(proceedToStep2);
 	}
 
 	public int getItemsInCart() {
