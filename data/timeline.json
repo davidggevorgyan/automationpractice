@@ -1,209 +1,209 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-  "name" : "timeline",
   "children" : [ {
-    "name" : "DavidGevorgyan",
+    "name" : "travis-job-6b13a662-81ab-4a83-baf7-5f03a654be3e",
     "children" : [ {
-      "name" : "14420@DavidGevorgyan.TestNG-test=Automationpractice Selenium Suite-4(19)",
+      "name" : "3812@travis-job-6b13a662-81ab-4a83-baf7-5f03a654be3e.TestNG-test=Automationpractice Selenium Suite-4(15)",
       "children" : [ {
-        "name" : "checkCountInHover",
-        "uid" : "25ee059e18c11f5",
-        "parentUid" : "ce3da2070964f0543aacb32b0fb87685",
+        "name" : "forgotPassword",
+        "uid" : "19eb7eca72e2549e",
+        "parentUid" : "7aa7b5aa13cba8d167204deea5afcb68",
         "status" : "passed",
         "time" : {
-          "start" : 1547593595433,
-          "stop" : 1547593605404,
-          "duration" : 9971
+          "start" : 1547594700966,
+          "stop" : 1547594712948,
+          "duration" : 11982
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
-        "name" : "createUpdateDeleteWishlist",
-        "uid" : "457c52c3309b58f3",
-        "parentUid" : "ce3da2070964f0543aacb32b0fb87685",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547593628806,
-          "stop" : 1547593655065,
-          "duration" : 26259
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "signInWithInvalidCredentials",
-        "uid" : "da47ee297a8d280e",
-        "parentUid" : "ce3da2070964f0543aacb32b0fb87685",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547593618314,
-          "stop" : 1547593626439,
-          "duration" : 8125
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "addItemToCart",
-        "uid" : "96f114bd7c5c5aad",
-        "parentUid" : "ce3da2070964f0543aacb32b0fb87685",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547593581385,
-          "stop" : 1547593592212,
-          "duration" : 10827
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "forgotPasswordWithInvalidCredentials",
-        "uid" : "749adad696dbc384",
-        "parentUid" : "ce3da2070964f0543aacb32b0fb87685",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547593607114,
-          "stop" : 1547593616738,
-          "duration" : 9624
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "ce3da2070964f0543aacb32b0fb87685"
-    }, {
-      "name" : "14420@DavidGevorgyan.TestNG-test=Automationpractice Selenium Suite-2(17)",
-      "children" : [ {
-        "name" : "changeQuantityInCart",
-        "uid" : "17ae32bd12a3987",
-        "parentUid" : "5c41ef66795f65812280144f562a21c2",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547593581385,
-          "stop" : 1547593601987,
-          "duration" : 20602
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "removeItemFromHover",
-        "uid" : "1caa78a45eddfce5",
-        "parentUid" : "5c41ef66795f65812280144f562a21c2",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547593604382,
-          "stop" : 1547593630876,
-          "duration" : 26494
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "5c41ef66795f65812280144f562a21c2"
-    }, {
-      "name" : "14420@DavidGevorgyan.TestNG-test=Automationpractice Selenium Suite-1(16)",
-      "children" : [ {
         "name" : "signOut",
-        "uid" : "6118cd874e4891e7",
-        "parentUid" : "5008eda8363cdb0f7073698096a1f98c",
+        "uid" : "f1c2024d041f96f5",
+        "parentUid" : "7aa7b5aa13cba8d167204deea5afcb68",
         "status" : "passed",
         "time" : {
-          "start" : 1547593628597,
-          "stop" : 1547593641112,
-          "duration" : 12515
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "signIn",
-        "uid" : "46b9d7d0d83d353",
-        "parentUid" : "5008eda8363cdb0f7073698096a1f98c",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547593617276,
-          "stop" : 1547593626347,
-          "duration" : 9071
+          "start" : 1547594743472,
+          "stop" : 1547594761751,
+          "duration" : 18279
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "buyItemsFromCart",
-        "uid" : "900ec4a69bfe2b0e",
-        "parentUid" : "5008eda8363cdb0f7073698096a1f98c",
+        "uid" : "69999a0aee4071a1",
+        "parentUid" : "7aa7b5aa13cba8d167204deea5afcb68",
         "status" : "passed",
         "time" : {
-          "start" : 1547593581383,
-          "stop" : 1547593615584,
-          "duration" : 34201
+          "start" : 1547594618394,
+          "stop" : 1547594672672,
+          "duration" : 54278
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "5008eda8363cdb0f7073698096a1f98c"
+      "uid" : "7aa7b5aa13cba8d167204deea5afcb68"
     }, {
-      "name" : "14420@DavidGevorgyan.TestNG-test=Automationpractice Selenium Suite-5(20)",
+      "name" : "3812@travis-job-6b13a662-81ab-4a83-baf7-5f03a654be3e.TestNG-test=Automationpractice Selenium Suite-3(14)",
+      "children" : [ {
+        "name" : "selectColor",
+        "uid" : "7f55e247c89019c1",
+        "parentUid" : "3c4f09fade76ac56bcab9283a98acc0e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547594625202,
+          "stop" : 1547594638548,
+          "duration" : 13346
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "createUpdateDeleteWishlist",
+        "uid" : "d3ab3eef2da4744a",
+        "parentUid" : "3c4f09fade76ac56bcab9283a98acc0e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547594667629,
+          "stop" : 1547594712055,
+          "duration" : 44426
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "checkCountInHover",
+        "uid" : "404ccd393553eecc",
+        "parentUid" : "3c4f09fade76ac56bcab9283a98acc0e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547594746325,
+          "stop" : 1547594760571,
+          "duration" : 14246
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3c4f09fade76ac56bcab9283a98acc0e"
+    }, {
+      "name" : "3812@travis-job-6b13a662-81ab-4a83-baf7-5f03a654be3e.TestNG-test=Automationpractice Selenium Suite-5(16)",
+      "children" : [ {
+        "name" : "signInWithInvalidCredentials",
+        "uid" : "a4d011453d29e0fa",
+        "parentUid" : "9d2e212aeec7784f75583814515db65b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547594734880,
+          "stop" : 1547594745057,
+          "duration" : 10177
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "changeQuantityInCart",
+        "uid" : "857f5138527a9cc2",
+        "parentUid" : "9d2e212aeec7784f75583814515db65b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547594620405,
+          "stop" : 1547594708145,
+          "duration" : 87740
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9d2e212aeec7784f75583814515db65b"
+    }, {
+      "name" : "3812@travis-job-6b13a662-81ab-4a83-baf7-5f03a654be3e.TestNG-test=Automationpractice Selenium Suite-1(12)",
+      "children" : [ {
+        "name" : "addItemToCart",
+        "uid" : "b70093896b7c94c5",
+        "parentUid" : "29612e842db8a71111be867284c36d05",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547594624900,
+          "stop" : 1547594639972,
+          "duration" : 15072
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "removeItemFromHover",
+        "uid" : "258b1df39227b13a",
+        "parentUid" : "29612e842db8a71111be867284c36d05",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547594738127,
+          "stop" : 1547594761566,
+          "duration" : 23439
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "removeLastItemFromCart",
+        "uid" : "4a9b6a269790efe9",
+        "parentUid" : "29612e842db8a71111be867284c36d05",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547594660383,
+          "stop" : 1547594685572,
+          "duration" : 25189
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "signIn",
+        "uid" : "523a670761beb68c",
+        "parentUid" : "29612e842db8a71111be867284c36d05",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547594706350,
+          "stop" : 1547594719645,
+          "duration" : 13295
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "29612e842db8a71111be867284c36d05"
+    }, {
+      "name" : "3812@travis-job-6b13a662-81ab-4a83-baf7-5f03a654be3e.TestNG-test=Automationpractice Selenium Suite-2(13)",
       "children" : [ {
         "name" : "addSeveralItemsToCart",
-        "uid" : "6a532178030f5fa2",
-        "parentUid" : "f6bac8beb9e686571e8a9184f55f16b4",
+        "uid" : "f45e2b0c6de03f9d",
+        "parentUid" : "363fe89f41c3d0f3fcdab4c5a91f1501",
         "status" : "passed",
         "time" : {
-          "start" : 1547593581383,
-          "stop" : 1547593592078,
-          "duration" : 10695
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "selectColor",
-        "uid" : "d44820777a8b99ee",
-        "parentUid" : "f6bac8beb9e686571e8a9184f55f16b4",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547593595446,
-          "stop" : 1547593603388,
-          "duration" : 7942
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "forgotPassword",
-        "uid" : "d2735a007e5f09cd",
-        "parentUid" : "f6bac8beb9e686571e8a9184f55f16b4",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547593605117,
-          "stop" : 1547593630096,
-          "duration" : 24979
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "f6bac8beb9e686571e8a9184f55f16b4"
-    }, {
-      "name" : "14420@DavidGevorgyan.TestNG-test=Automationpractice Selenium Suite-3(18)",
-      "children" : [ {
-        "name" : "removeLastItemFromCart",
-        "uid" : "dfcf15a9aef19caa",
-        "parentUid" : "3e581d65b5f409d82bbfe2a1ffd30983",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547593581383,
-          "stop" : 1547593599068,
-          "duration" : 17685
+          "start" : 1547594619715,
+          "stop" : 1547594680699,
+          "duration" : 60984
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "checkOut",
-        "uid" : "7c811a98fc37e3c",
-        "parentUid" : "3e581d65b5f409d82bbfe2a1ffd30983",
+        "uid" : "23df47fa455a623",
+        "parentUid" : "363fe89f41c3d0f3fcdab4c5a91f1501",
         "status" : "passed",
         "time" : {
-          "start" : 1547593600705,
-          "stop" : 1547593629485,
-          "duration" : 28780
+          "start" : 1547594738745,
+          "stop" : 1547594768401,
+          "duration" : 29656
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "forgotPasswordWithInvalidCredentials",
+        "uid" : "665ab56470e22e28",
+        "parentUid" : "363fe89f41c3d0f3fcdab4c5a91f1501",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547594700327,
+          "stop" : 1547594715032,
+          "duration" : 14705
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "3e581d65b5f409d82bbfe2a1ffd30983"
+      "uid" : "363fe89f41c3d0f3fcdab4c5a91f1501"
     } ],
-    "uid" : "df2ff935e44744200b120e56081b89fc"
-  } ]
+    "uid" : "c7473192a10915c1adab969bf143e0fb"
+  } ],
+  "name" : "timeline"
 }

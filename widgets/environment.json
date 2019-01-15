@@ -1,8 +1,8 @@
 [ {
-  "values" : [ "localhost" ],
+  "values" : [ "https://travis-ci.org/davidggevorgyan/automationpractice/builds/480138672" ],
   "name" : "Travis URL"
 }, {
-  "values" : [ "LocalRun" ],
+  "values" : [ "51" ],
   "name" : "Travis Run"
 }, {
   "values" : [ "chrome" ],

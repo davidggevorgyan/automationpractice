@@ -1,150 +1,150 @@
 [ {
-  "uid" : "457c52c3309b58f3",
-  "name" : "createUpdateDeleteWishlist",
-  "time" : {
-    "start" : 1547593628806,
-    "stop" : 1547593655065,
-    "duration" : 26259
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "dfcf15a9aef19caa",
-  "name" : "removeLastItemFromCart",
-  "time" : {
-    "start" : 1547593581383,
-    "stop" : 1547593599068,
-    "duration" : 17685
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d2735a007e5f09cd",
-  "name" : "forgotPassword",
-  "time" : {
-    "start" : 1547593605117,
-    "stop" : 1547593630096,
-    "duration" : 24979
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "900ec4a69bfe2b0e",
+  "uid" : "69999a0aee4071a1",
   "name" : "buyItemsFromCart",
   "time" : {
-    "start" : 1547593581383,
-    "stop" : 1547593615584,
-    "duration" : 34201
+    "start" : 1547594618394,
+    "stop" : 1547594672672,
+    "duration" : 54278
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1caa78a45eddfce5",
-  "name" : "removeItemFromHover",
-  "time" : {
-    "start" : 1547593604382,
-    "stop" : 1547593630876,
-    "duration" : 26494
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6118cd874e4891e7",
-  "name" : "signOut",
-  "time" : {
-    "start" : 1547593628597,
-    "stop" : 1547593641112,
-    "duration" : 12515
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6a532178030f5fa2",
-  "name" : "addSeveralItemsToCart",
-  "time" : {
-    "start" : 1547593581383,
-    "stop" : 1547593592078,
-    "duration" : 10695
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d44820777a8b99ee",
-  "name" : "selectColor",
-  "time" : {
-    "start" : 1547593595446,
-    "stop" : 1547593603388,
-    "duration" : 7942
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "da47ee297a8d280e",
+  "uid" : "a4d011453d29e0fa",
   "name" : "signInWithInvalidCredentials",
   "time" : {
-    "start" : 1547593618314,
-    "stop" : 1547593626439,
-    "duration" : 8125
+    "start" : 1547594734880,
+    "stop" : 1547594745057,
+    "duration" : 10177
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "46b9d7d0d83d353",
+  "uid" : "19eb7eca72e2549e",
+  "name" : "forgotPassword",
+  "time" : {
+    "start" : 1547594700966,
+    "stop" : 1547594712948,
+    "duration" : 11982
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "523a670761beb68c",
   "name" : "signIn",
   "time" : {
-    "start" : 1547593617276,
-    "stop" : 1547593626347,
-    "duration" : 9071
+    "start" : 1547594706350,
+    "stop" : 1547594719645,
+    "duration" : 13295
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "17ae32bd12a3987",
-  "name" : "changeQuantityInCart",
+  "uid" : "7f55e247c89019c1",
+  "name" : "selectColor",
   "time" : {
-    "start" : 1547593581385,
-    "stop" : 1547593601987,
-    "duration" : 20602
+    "start" : 1547594625202,
+    "stop" : 1547594638548,
+    "duration" : 13346
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "25ee059e18c11f5",
+  "uid" : "f45e2b0c6de03f9d",
+  "name" : "addSeveralItemsToCart",
+  "time" : {
+    "start" : 1547594619715,
+    "stop" : 1547594680699,
+    "duration" : 60984
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "404ccd393553eecc",
   "name" : "checkCountInHover",
   "time" : {
-    "start" : 1547593595433,
-    "stop" : 1547593605404,
-    "duration" : 9971
+    "start" : 1547594746325,
+    "stop" : 1547594760571,
+    "duration" : 14246
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "96f114bd7c5c5aad",
-  "name" : "addItemToCart",
+  "uid" : "258b1df39227b13a",
+  "name" : "removeItemFromHover",
   "time" : {
-    "start" : 1547593581385,
-    "stop" : 1547593592212,
-    "duration" : 10827
+    "start" : 1547594738127,
+    "stop" : 1547594761566,
+    "duration" : 23439
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "749adad696dbc384",
-  "name" : "forgotPasswordWithInvalidCredentials",
-  "time" : {
-    "start" : 1547593607114,
-    "stop" : 1547593616738,
-    "duration" : 9624
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7c811a98fc37e3c",
+  "uid" : "23df47fa455a623",
   "name" : "checkOut",
   "time" : {
-    "start" : 1547593600705,
-    "stop" : 1547593629485,
-    "duration" : 28780
+    "start" : 1547594738745,
+    "stop" : 1547594768401,
+    "duration" : 29656
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "857f5138527a9cc2",
+  "name" : "changeQuantityInCart",
+  "time" : {
+    "start" : 1547594620405,
+    "stop" : 1547594708145,
+    "duration" : 87740
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f1c2024d041f96f5",
+  "name" : "signOut",
+  "time" : {
+    "start" : 1547594743472,
+    "stop" : 1547594761751,
+    "duration" : 18279
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "665ab56470e22e28",
+  "name" : "forgotPasswordWithInvalidCredentials",
+  "time" : {
+    "start" : 1547594700327,
+    "stop" : 1547594715032,
+    "duration" : 14705
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4a9b6a269790efe9",
+  "name" : "removeLastItemFromCart",
+  "time" : {
+    "start" : 1547594660383,
+    "stop" : 1547594685572,
+    "duration" : 25189
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b70093896b7c94c5",
+  "name" : "addItemToCart",
+  "time" : {
+    "start" : 1547594624900,
+    "stop" : 1547594639972,
+    "duration" : 15072
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d3ab3eef2da4744a",
+  "name" : "createUpdateDeleteWishlist",
+  "time" : {
+    "start" : 1547594667629,
+    "stop" : 1547594712055,
+    "duration" : 44426
   },
   "status" : "passed",
   "severity" : "normal"
