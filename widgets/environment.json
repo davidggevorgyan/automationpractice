@@ -1,0 +1,10 @@
+[ {
+  "values" : [ "localhost" ],
+  "name" : "Travis URL"
+}, {
+  "values" : [ "LocalRun" ],
+  "name" : "Travis Run"
+}, {
+  "values" : [ "chrome" ],
+  "name" : "Browser"
+} ]

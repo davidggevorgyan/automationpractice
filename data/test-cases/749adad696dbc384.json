@@ -1,0 +1,109 @@
+{
+  "uid" : "749adad696dbc384",
+  "name" : "forgotPasswordWithInvalidCredentials",
+  "fullName" : "tests.SignInTest.forgotPasswordWithInvalidCredentials",
+  "historyId" : "f7a3cafa29e76b627f1781c2917b4ef",
+  "time" : {
+    "start" : 1547593607114,
+    "stop" : 1547593616738,
+    "duration" : 9624
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1547593605584,
+      "stop" : 1547593607110,
+      "duration" : 1526
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1547593616740,
+      "stop" : 1547593616843,
+      "duration" : 103
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.SignInTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.SignInTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "forgotPasswordWithInvalidCredentials"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Selenium Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Automationpractice Selenium Suite"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.SignInTest"
+  }, {
+    "name" : "host",
+    "value" : "DavidGevorgyan"
+  }, {
+    "name" : "thread",
+    "value" : "14420@DavidGevorgyan.TestNG-test=Automationpractice Selenium Suite-4(19)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "BrowserStack",
+    "url" : "https://automate.browserstack.com/builds/f535bea9b4c4f1050bccd80507ab9b175b959d8a/sessions/4f510012fbf9e5ee8dc1b1e0fd688652"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "3918c86003c84667",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547593607114,
+          "stop" : 1547593616738,
+          "duration" : 9624
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "749adad696dbc384.json",
+  "parameterValues" : [ ]
+}

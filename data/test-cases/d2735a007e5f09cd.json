@@ -1,0 +1,109 @@
+{
+  "uid" : "d2735a007e5f09cd",
+  "name" : "forgotPassword",
+  "fullName" : "tests.SignInTest.forgotPassword",
+  "historyId" : "f6f2cd4765e84d87515dc5ce7125b463",
+  "time" : {
+    "start" : 1547593605117,
+    "stop" : 1547593630096,
+    "duration" : 24979
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1547593603486,
+      "stop" : 1547593605115,
+      "duration" : 1629
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1547593630097,
+      "stop" : 1547593630193,
+      "duration" : 96
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.SignInTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.SignInTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "forgotPassword"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Selenium Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Automationpractice Selenium Suite"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.SignInTest"
+  }, {
+    "name" : "host",
+    "value" : "DavidGevorgyan"
+  }, {
+    "name" : "thread",
+    "value" : "14420@DavidGevorgyan.TestNG-test=Automationpractice Selenium Suite-5(20)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "BrowserStack",
+    "url" : "https://automate.browserstack.com/builds/f535bea9b4c4f1050bccd80507ab9b175b959d8a/sessions/af038b94830fe7c807de24b3c8c8562d"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "8c52a6f270d43099",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547593605117,
+          "stop" : 1547593630096,
+          "duration" : 24979
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d2735a007e5f09cd.json",
+  "parameterValues" : [ ]
+}
