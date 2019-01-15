@@ -1,45 +1,46 @@
 package tests.testng;
 
+import io.qameta.allure.*;
+import io.qameta.allure.model.Link;
 import org.apache.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import setup.DriverBase;
+import setup.*;
 
 public class TestListener implements ITestListener {
 	private final static Logger logger = Logger.getLogger(TestListener.class);
 
 	@Override
 	public synchronized void onStart(ITestContext context) {
-		logger.info("Extent Reports Version 4 Test Suite started!");
+		logger.info("Test Suite started!");
 	}
 
 	@Override
 	public synchronized void onFinish(ITestContext context) {
-		logger.info(("Extent Reports Version 4  Test Suite is ending!"));
+		logger.info(("Test Suite is ending!"));
+		FrameworkProperties.writeProperties();
 	}
 
 	@Override
 	public synchronized void onTestStart(ITestResult result) {
 		logger.info((result.getMethod().getMethodName() + " started!"));
+		browserStackLinkGenerator();
 	}
 
 	@Override
 	public synchronized void onTestSuccess(ITestResult result) {
 		logger.info((result.getMethod().getMethodName() + " passed!"));
-		browserStackLinkGenerator();
 	}
 
 	@Override
 	public synchronized void onTestFailure(ITestResult result) {
 		logger.info((result.getMethod().getMethodName() + " failed!"));
-		browserStackLinkGenerator();
 	}
 
 	@Override
 	public synchronized void onTestSkipped(ITestResult result) {
 		logger.info((result.getMethod().getMethodName() + " skipped!"));
-		browserStackLinkGenerator();
 	}
 
 	@Override
@@ -48,7 +49,9 @@ public class TestListener implements ITestListener {
 	}
 
 	private void browserStackLinkGenerator() {
-		//test.get().info("<a href=\"https://automate.browserstack.com/builds/f535bea9b4c4f1050bccd80507ab9b175b959d8a/sessions/" + DriverBase.get().getSession(DriverBase.get().getDriver()) + "\" target=\"_blank\">Link to the Run</a>");
+		Allure.addLinks(new Link()
+			.setName("BrowserStack")
+			.setUrl("https://automate.browserstack.com/builds/f535bea9b4c4f1050bccd80507ab9b175b959d8a/sessions/" + DriverBase.get().getSession(DriverBase.get().getDriver())));
 	}
 
 }

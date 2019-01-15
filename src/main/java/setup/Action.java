@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.function.Function;
 
-import static setup.Properties.DEFAULT_TIMEOUT;
+import static setup.FrameworkProperties.DEFAULT_TIMEOUT;
 
 public class Action {
 

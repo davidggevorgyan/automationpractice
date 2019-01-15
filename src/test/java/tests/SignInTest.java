@@ -4,8 +4,8 @@ import org.testng.annotations.Test;
 import pages.SignInPage;
 
 import static org.testng.Assert.assertTrue;
-import static setup.Properties.LOGIN;
-import static setup.Properties.PASSWORD;
+import static setup.FrameworkProperties.LOGIN;
+import static setup.FrameworkProperties.PASSWORD;
 
 public class SignInTest extends BaseTest {
 

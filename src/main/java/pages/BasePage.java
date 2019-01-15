@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.LoadableComponent;
 import setup.Action;
 import setup.DriverBase;
 
-import static setup.Properties.BASE_URL;
+import static setup.FrameworkProperties.BASE_URL;
 
 
 public abstract class BasePage<T extends LoadableComponent<T>> extends LoadableComponent<T> {

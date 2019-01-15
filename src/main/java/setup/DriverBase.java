@@ -10,7 +10,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import static setup.Properties.*;
+import static setup.FrameworkProperties.*;
 
 
 public class DriverBase {
