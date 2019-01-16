@@ -5,7 +5,7 @@ before_install:
   - date
 install: true
 script:
-  mvn clean test -Dselenium.host=cloud -Dselenium.hostURL=https://$USERNAME:$ACCESSKEY@hub-cloud.browserstack.com/wd/hub -Dtravis.buildNumber=$TRAVIS_BUILD_NUMBER -Dtravis.buildURL=$TRAVIS_BUILD_WEB_URL
+  mvn clean test -Dselenium.host=cloud -Dselenium.hostURL=https://$USERNAME:$ACCESSKEY@hub-cloud.browserstack.com/wd/hub -Dtravis.buildNumber=$TRAVIS_BUILD_NUMBER -Dtravis.buildURL=$TRAVIS_BUILD_WEB_URL -Dtravis.branch=$TRAVIS_BRANCH
 after_script:
   - chmod 777 .travis/deploy.sh
   - .travis/deploy.sh
