@@ -1,11 +1,10 @@
 # http://automationpractice.com automation
 
 [![Build Status](https://travis-ci.org/davidggevorgyan/automationpractice.svg?branch=master)](https://travis-ci.org/davidggevorgyan/automationpractice)
-[![Test Report](http://pse.am/reporting.svg)](https://davidggevorgyan.github.io/automationpractice/)
-
+[![Allure Report](https://img.shields.io/badge/Allure%20Report-2.9.0-orange.svg)](https://davidggevorgyan.github.io/automationpractice/)
 
 ### Following tools were used in this framework:
-Maven, TestNG, Selenium WebDriver, Zalenium, Travis CI, Extent Reporting Framework, WebDriver Extensions, Log4j, Maven Surefire Plugin(for parallel tests execution), GitHub Pages, and BrowserStack. 
+Maven, TestNG, Selenium WebDriver, Zalenium, Travis CI, Allure Reporting Framework, WebDriver Extensions, Log4j, Maven Surefire Plugin(for parallel tests execution), GitHub Pages, and BrowserStack. 
 All automation is done in Java.
 
 ### Execute the following command to run tests:
@@ -26,3 +25,4 @@ All automation is done in Java.
 * [Extent Reporting Framework Documentation](http://extentreports.com/docs/versions/4/java/)
 * [Extent Reports Version 3 Reporting with TestNG Listener](https://www.swtestacademy.com/extent-reports-version-3-reporting-testng/)
 * [GitHub pages to store Extent Report](https://pages.github.com)
+* [Allure Documentation](http://allure.qatools.ru)
