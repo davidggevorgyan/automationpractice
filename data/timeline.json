@@ -1,225 +1,225 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "travis-job-9700bb5c-1aac-4bc5-a786-2b415fcf2b91",
+    "name" : "travis-job-70e1d356-7f6a-452f-b0d2-b9b05b12ac0b",
     "children" : [ {
-      "name" : "3810@travis-job-9700bb5c-1aac-4bc5-a786-2b415fcf2b91.main(1)",
-      "children" : [ {
-        "name" : "exampleOfDisabledFailingTest",
-        "uid" : "1019bc641da9b52",
-        "parentUid" : "55849d69bf5f6451784cdb21e4cfec6b",
-        "status" : "unknown",
-        "time" : {
-          "start" : 1547645618156,
-          "stop" : 1547645618160,
-          "duration" : 4
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "55849d69bf5f6451784cdb21e4cfec6b"
-    }, {
-      "name" : "3810@travis-job-9700bb5c-1aac-4bc5-a786-2b415fcf2b91.TestNG-test=Automationpractice Selenium Suite-5(16)",
-      "children" : [ {
-        "name" : "checkCountInHover",
-        "uid" : "7f2a9a1c837b7e71",
-        "parentUid" : "3a84c212df92f82bead5f35dc1c14abc",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547645731553,
-          "stop" : 1547645736796,
-          "duration" : 5243
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "signIn",
-        "uid" : "3445dc4ea738ec42",
-        "parentUid" : "3a84c212df92f82bead5f35dc1c14abc",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547645698916,
-          "stop" : 1547645714352,
-          "duration" : 15436
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "changeQuantityInCart",
-        "uid" : "45c5c34800adf609",
-        "parentUid" : "3a84c212df92f82bead5f35dc1c14abc",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547645625594,
-          "stop" : 1547645681181,
-          "duration" : 55587
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "3a84c212df92f82bead5f35dc1c14abc"
-    }, {
-      "name" : "3810@travis-job-9700bb5c-1aac-4bc5-a786-2b415fcf2b91.TestNG-test=Automationpractice Selenium Suite-2(13)",
-      "children" : [ {
-        "name" : "signOut",
-        "uid" : "5e54e11b4b2cd008",
-        "parentUid" : "ea78e281b9cce96512db6e6c1d58c4ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547645711598,
-          "stop" : 1547645722836,
-          "duration" : 11238
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "addSeveralItemsToCart",
-        "uid" : "7eb312ed293db3cd",
-        "parentUid" : "ea78e281b9cce96512db6e6c1d58c4ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547645625891,
-          "stop" : 1547645658076,
-          "duration" : 32185
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "forgotPassword",
-        "uid" : "8d0cba01dd6def82",
-        "parentUid" : "ea78e281b9cce96512db6e6c1d58c4ed",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547645677402,
-          "stop" : 1547645693388,
-          "duration" : 15986
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "ea78e281b9cce96512db6e6c1d58c4ed"
-    }, {
-      "name" : "3810@travis-job-9700bb5c-1aac-4bc5-a786-2b415fcf2b91.TestNG-test=Automationpractice Selenium Suite-1(12)",
-      "children" : [ {
-        "name" : "addItemToCart",
-        "uid" : "afd573394046feaf",
-        "parentUid" : "f78baad310055ab081b0f30506481674",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547645626588,
-          "stop" : 1547645632330,
-          "duration" : 5742
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "removeLastItemFromCart",
-        "uid" : "2f668e444af0a0ce",
-        "parentUid" : "f78baad310055ab081b0f30506481674",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547645649898,
-          "stop" : 1547645680677,
-          "duration" : 30779
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "checkOut",
-        "uid" : "6d74f86f8397e7f7",
-        "parentUid" : "f78baad310055ab081b0f30506481674",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547645734165,
-          "stop" : 1547645741343,
-          "duration" : 7178
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "forgotPasswordWithInvalidCredentials",
-        "uid" : "d4115a0385e4d956",
-        "parentUid" : "f78baad310055ab081b0f30506481674",
-        "status" : "passed",
-        "time" : {
-          "start" : 1547645699076,
-          "stop" : 1547645715720,
-          "duration" : 16644
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "f78baad310055ab081b0f30506481674"
-    }, {
-      "name" : "3810@travis-job-9700bb5c-1aac-4bc5-a786-2b415fcf2b91.TestNG-test=Automationpractice Selenium Suite-3(14)",
+      "name" : "3810@travis-job-70e1d356-7f6a-452f-b0d2-b9b05b12ac0b.TestNG-test=Automationpractice Selenium Suite-3(14)",
       "children" : [ {
         "name" : "selectColor",
-        "uid" : "82ccea6ec8a3b66f",
-        "parentUid" : "78c281c2c72b76be31e8b3651fbd2043",
+        "uid" : "512347286822821b",
+        "parentUid" : "4f269dd2e998d45971dd5e2a73627b35",
         "status" : "passed",
         "time" : {
-          "start" : 1547645625476,
-          "stop" : 1547645637683,
-          "duration" : 12207
+          "start" : 1547646960494,
+          "stop" : 1547646964251,
+          "duration" : 3757
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "checkCountInHover",
+        "uid" : "bf5c00e4a8c0b20e",
+        "parentUid" : "4f269dd2e998d45971dd5e2a73627b35",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547647020260,
+          "stop" : 1547647025676,
+          "duration" : 5416
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "createUpdateDeleteWishlist",
-        "uid" : "e0acf9cfa6a72efa",
-        "parentUid" : "78c281c2c72b76be31e8b3651fbd2043",
+        "uid" : "c6a8a038f1445081",
+        "parentUid" : "4f269dd2e998d45971dd5e2a73627b35",
         "status" : "passed",
         "time" : {
-          "start" : 1547645730554,
-          "stop" : 1547645749565,
-          "duration" : 19011
+          "start" : 1547646981844,
+          "stop" : 1547646999131,
+          "duration" : 17287
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "78c281c2c72b76be31e8b3651fbd2043"
+      "uid" : "4f269dd2e998d45971dd5e2a73627b35"
     }, {
-      "name" : "3810@travis-job-9700bb5c-1aac-4bc5-a786-2b415fcf2b91.TestNG-test=Automationpractice Selenium Suite-4(15)",
+      "name" : "3810@travis-job-70e1d356-7f6a-452f-b0d2-b9b05b12ac0b.TestNG-test=Automationpractice Selenium Suite-4(15)",
       "children" : [ {
         "name" : "removeItemFromHover",
-        "uid" : "d497f9bc452236f9",
-        "parentUid" : "f9595a80f0dff2f1298dba283f2b8dfb",
+        "uid" : "3704f505d2dc6a46",
+        "parentUid" : "276f2f6b56c1f08428309ae2db380fb8",
         "status" : "passed",
         "time" : {
-          "start" : 1547645734510,
-          "stop" : 1547645742942,
-          "duration" : 8432
+          "start" : 1547647020294,
+          "stop" : 1547647028358,
+          "duration" : 8064
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "forgotPasswordWithInvalidCredentials",
+        "uid" : "11c1f358c54ae4ad",
+        "parentUid" : "276f2f6b56c1f08428309ae2db380fb8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547646995726,
+          "stop" : 1547647001801,
+          "duration" : 6075
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "buyItemsFromCart",
-        "uid" : "d556a9ad1d5766f0",
-        "parentUid" : "f9595a80f0dff2f1298dba283f2b8dfb",
+        "uid" : "8d7fc7e4aeaa721a",
+        "parentUid" : "276f2f6b56c1f08428309ae2db380fb8",
         "status" : "passed",
         "time" : {
-          "start" : 1547645630823,
-          "stop" : 1547645689566,
-          "duration" : 58743
+          "start" : 1547646955942,
+          "stop" : 1547646974812,
+          "duration" : 18870
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "276f2f6b56c1f08428309ae2db380fb8"
+    }, {
+      "name" : "3810@travis-job-70e1d356-7f6a-452f-b0d2-b9b05b12ac0b.TestNG-test=Automationpractice Selenium Suite-1(12)",
+      "children" : [ {
+        "name" : "removeLastItemFromCart",
+        "uid" : "314534aee5dbf692",
+        "parentUid" : "74e09d844d2921e1b3066a5e83b3cfea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547646979001,
+          "stop" : 1547646986691,
+          "duration" : 7690
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "signInWithInvalidCredentials",
-        "uid" : "eade750aa3be7e5",
-        "parentUid" : "f9595a80f0dff2f1298dba283f2b8dfb",
+        "uid" : "932611ac234fdce1",
+        "parentUid" : "74e09d844d2921e1b3066a5e83b3cfea",
         "status" : "passed",
         "time" : {
-          "start" : 1547645707774,
-          "stop" : 1547645717018,
-          "duration" : 9244
+          "start" : 1547647003742,
+          "stop" : 1547647007766,
+          "duration" : 4024
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "addItemToCart",
+        "uid" : "2e89b04703392e49",
+        "parentUid" : "74e09d844d2921e1b3066a5e83b3cfea",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547646956186,
+          "stop" : 1547646961105,
+          "duration" : 4919
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "f9595a80f0dff2f1298dba283f2b8dfb"
+      "uid" : "74e09d844d2921e1b3066a5e83b3cfea"
+    }, {
+      "name" : "3810@travis-job-70e1d356-7f6a-452f-b0d2-b9b05b12ac0b.TestNG-test=Automationpractice Selenium Suite-5(16)",
+      "children" : [ {
+        "name" : "changeQuantityInCart",
+        "uid" : "e11977840b0a6134",
+        "parentUid" : "8447b4527d4780fde8d9a7e98725a05b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547646956162,
+          "stop" : 1547646975716,
+          "duration" : 19554
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "signIn",
+        "uid" : "b65a1727668f8929",
+        "parentUid" : "8447b4527d4780fde8d9a7e98725a05b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547646993346,
+          "stop" : 1547646998539,
+          "duration" : 5193
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "checkOut",
+        "uid" : "ca1252bd720567bb",
+        "parentUid" : "8447b4527d4780fde8d9a7e98725a05b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547647017133,
+          "stop" : 1547647024085,
+          "duration" : 6952
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8447b4527d4780fde8d9a7e98725a05b"
+    }, {
+      "name" : "3810@travis-job-70e1d356-7f6a-452f-b0d2-b9b05b12ac0b.TestNG-test=Automationpractice Selenium Suite-2(13)",
+      "children" : [ {
+        "name" : "addSeveralItemsToCart",
+        "uid" : "ad4d2278abffc3ef",
+        "parentUid" : "b36462a12d9a54194a55bb801398fc6c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547646961477,
+          "stop" : 1547646970699,
+          "duration" : 9222
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "signOut",
+        "uid" : "88ef59e8582027ae",
+        "parentUid" : "b36462a12d9a54194a55bb801398fc6c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547647015161,
+          "stop" : 1547647021240,
+          "duration" : 6079
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "forgotPassword",
+        "uid" : "d9b0298a250057c9",
+        "parentUid" : "b36462a12d9a54194a55bb801398fc6c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547646991486,
+          "stop" : 1547646996738,
+          "duration" : 5252
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b36462a12d9a54194a55bb801398fc6c"
+    }, {
+      "name" : "3810@travis-job-70e1d356-7f6a-452f-b0d2-b9b05b12ac0b.main(1)",
+      "children" : [ {
+        "name" : "exampleOfDisabledFailingTest",
+        "uid" : "1dd263035c18073e",
+        "parentUid" : "c44da23317a5679ea435c59a1ea94178",
+        "status" : "unknown",
+        "time" : {
+          "start" : 1547646948451,
+          "stop" : 1547646948456,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c44da23317a5679ea435c59a1ea94178"
     } ],
-    "uid" : "99a4bc753b82702da8658891388f2ffb"
+    "uid" : "1bc25ca95d660e000b15c8de6a8329be"
   } ],
   "name" : "timeline"
 }

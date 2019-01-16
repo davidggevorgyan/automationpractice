@@ -1,160 +1,160 @@
 [ {
-  "uid" : "6d74f86f8397e7f7",
-  "name" : "checkOut",
-  "time" : {
-    "start" : 1547645734165,
-    "stop" : 1547645741343,
-    "duration" : 7178
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7f2a9a1c837b7e71",
-  "name" : "checkCountInHover",
-  "time" : {
-    "start" : 1547645731553,
-    "stop" : 1547645736796,
-    "duration" : 5243
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "eade750aa3be7e5",
+  "uid" : "932611ac234fdce1",
   "name" : "signInWithInvalidCredentials",
   "time" : {
-    "start" : 1547645707774,
-    "stop" : 1547645717018,
-    "duration" : 9244
+    "start" : 1547647003742,
+    "stop" : 1547647007766,
+    "duration" : 4024
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "8d0cba01dd6def82",
-  "name" : "forgotPassword",
+  "uid" : "2e89b04703392e49",
+  "name" : "addItemToCart",
   "time" : {
-    "start" : 1547645677402,
-    "stop" : 1547645693388,
-    "duration" : 15986
+    "start" : 1547646956186,
+    "stop" : 1547646961105,
+    "duration" : 4919
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e0acf9cfa6a72efa",
-  "name" : "createUpdateDeleteWishlist",
+  "uid" : "11c1f358c54ae4ad",
+  "name" : "forgotPasswordWithInvalidCredentials",
   "time" : {
-    "start" : 1547645730554,
-    "stop" : 1547645749565,
-    "duration" : 19011
+    "start" : 1547646995726,
+    "stop" : 1547647001801,
+    "duration" : 6075
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "5e54e11b4b2cd008",
+  "uid" : "88ef59e8582027ae",
   "name" : "signOut",
   "time" : {
-    "start" : 1547645711598,
-    "stop" : 1547645722836,
-    "duration" : 11238
+    "start" : 1547647015161,
+    "stop" : 1547647021240,
+    "duration" : 6079
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1019bc641da9b52",
+  "uid" : "c6a8a038f1445081",
+  "name" : "createUpdateDeleteWishlist",
+  "time" : {
+    "start" : 1547646981844,
+    "stop" : 1547646999131,
+    "duration" : 17287
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "512347286822821b",
+  "name" : "selectColor",
+  "time" : {
+    "start" : 1547646960494,
+    "stop" : 1547646964251,
+    "duration" : 3757
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d9b0298a250057c9",
+  "name" : "forgotPassword",
+  "time" : {
+    "start" : 1547646991486,
+    "stop" : 1547646996738,
+    "duration" : 5252
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ad4d2278abffc3ef",
+  "name" : "addSeveralItemsToCart",
+  "time" : {
+    "start" : 1547646961477,
+    "stop" : 1547646970699,
+    "duration" : 9222
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e11977840b0a6134",
+  "name" : "changeQuantityInCart",
+  "time" : {
+    "start" : 1547646956162,
+    "stop" : 1547646975716,
+    "duration" : 19554
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3704f505d2dc6a46",
+  "name" : "removeItemFromHover",
+  "time" : {
+    "start" : 1547647020294,
+    "stop" : 1547647028358,
+    "duration" : 8064
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bf5c00e4a8c0b20e",
+  "name" : "checkCountInHover",
+  "time" : {
+    "start" : 1547647020260,
+    "stop" : 1547647025676,
+    "duration" : 5416
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ca1252bd720567bb",
+  "name" : "checkOut",
+  "time" : {
+    "start" : 1547647017133,
+    "stop" : 1547647024085,
+    "duration" : 6952
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1dd263035c18073e",
   "name" : "exampleOfDisabledFailingTest",
   "time" : {
-    "start" : 1547645618156,
-    "stop" : 1547645618160,
-    "duration" : 4
+    "start" : 1547646948451,
+    "stop" : 1547646948456,
+    "duration" : 5
   },
   "status" : "unknown",
   "severity" : "normal"
 }, {
-  "uid" : "d4115a0385e4d956",
-  "name" : "forgotPasswordWithInvalidCredentials",
-  "time" : {
-    "start" : 1547645699076,
-    "stop" : 1547645715720,
-    "duration" : 16644
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "3445dc4ea738ec42",
-  "name" : "signIn",
-  "time" : {
-    "start" : 1547645698916,
-    "stop" : 1547645714352,
-    "duration" : 15436
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d497f9bc452236f9",
-  "name" : "removeItemFromHover",
-  "time" : {
-    "start" : 1547645734510,
-    "stop" : 1547645742942,
-    "duration" : 8432
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "2f668e444af0a0ce",
-  "name" : "removeLastItemFromCart",
-  "time" : {
-    "start" : 1547645649898,
-    "stop" : 1547645680677,
-    "duration" : 30779
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d556a9ad1d5766f0",
+  "uid" : "8d7fc7e4aeaa721a",
   "name" : "buyItemsFromCart",
   "time" : {
-    "start" : 1547645630823,
-    "stop" : 1547645689566,
-    "duration" : 58743
+    "start" : 1547646955942,
+    "stop" : 1547646974812,
+    "duration" : 18870
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "45c5c34800adf609",
-  "name" : "changeQuantityInCart",
+  "uid" : "314534aee5dbf692",
+  "name" : "removeLastItemFromCart",
   "time" : {
-    "start" : 1547645625594,
-    "stop" : 1547645681181,
-    "duration" : 55587
+    "start" : 1547646979001,
+    "stop" : 1547646986691,
+    "duration" : 7690
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "82ccea6ec8a3b66f",
-  "name" : "selectColor",
+  "uid" : "b65a1727668f8929",
+  "name" : "signIn",
   "time" : {
-    "start" : 1547645625476,
-    "stop" : 1547645637683,
-    "duration" : 12207
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "afd573394046feaf",
-  "name" : "addItemToCart",
-  "time" : {
-    "start" : 1547645626588,
-    "stop" : 1547645632330,
-    "duration" : 5742
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7eb312ed293db3cd",
-  "name" : "addSeveralItemsToCart",
-  "time" : {
-    "start" : 1547645625891,
-    "stop" : 1547645658076,
-    "duration" : 32185
+    "start" : 1547646993346,
+    "stop" : 1547646998539,
+    "duration" : 5193
   },
   "status" : "passed",
   "severity" : "normal"
