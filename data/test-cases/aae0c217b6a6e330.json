@@ -1,0 +1,147 @@
+{
+  "uid" : "aae0c217b6a6e330",
+  "name" : "forgotPasswordWithInvalidCredentials",
+  "fullName" : "tests.SignInTest.forgotPasswordWithInvalidCredentials",
+  "historyId" : "f7a3cafa29e76b627f1781c2917b4ef",
+  "time" : {
+    "start" : 1547647733284,
+    "stop" : 1547647740813,
+    "duration" : 7529
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1547647727532,
+      "stop" : 1547647733281,
+      "duration" : 5749
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1547647740814,
+      "stop" : 1547647753539,
+      "duration" : 12725
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.SignInTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.SignInTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "forgotPasswordWithInvalidCredentials"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Selenium Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Automationpractice Selenium Suite"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.SignInTest"
+  }, {
+    "name" : "host",
+    "value" : "travis-job-1d9134c7-326a-4434-9885-3c423b623358"
+  }, {
+    "name" : "thread",
+    "value" : "3810@travis-job-1d9134c7-326a-4434-9885-3c423b623358.TestNG-test=Automationpractice Selenium Suite-4(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "BrowserStack",
+    "url" : "https://automate.browserstack.com/builds/f535bea9b4c4f1050bccd80507ab9b175b959d8a/sessions/7ef5cd14af38dbd6b0fd879679acca32efa2e2e1"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "9a7435dbe2b93137",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547647494899,
+          "stop" : 1547647501341,
+          "duration" : 6442
+        }
+      }, {
+        "uid" : "11c1f358c54ae4ad",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547646995726,
+          "stop" : 1547647001801,
+          "duration" : 6075
+        }
+      }, {
+        "uid" : "d4115a0385e4d956",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547645699076,
+          "stop" : 1547645715720,
+          "duration" : 16644
+        }
+      }, {
+        "uid" : "56a94a4364055939",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547643751098,
+          "stop" : 1547643765081,
+          "duration" : 13983
+        }
+      }, {
+        "uid" : "665ab56470e22e28",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547594700327,
+          "stop" : 1547594715032,
+          "duration" : 14705
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "aae0c217b6a6e330.json",
+  "parameterValues" : [ ]
+}

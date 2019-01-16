@@ -1,0 +1,147 @@
+{
+  "uid" : "eed45ecf5b0adb97",
+  "name" : "signIn",
+  "fullName" : "tests.SignInTest.signIn",
+  "historyId" : "f711985277a8624beb70125e6be172a7",
+  "time" : {
+    "start" : 1547647735127,
+    "stop" : 1547647741652,
+    "duration" : 6525
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1547647727765,
+      "stop" : 1547647735125,
+      "duration" : 7360
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1547647741653,
+      "stop" : 1547647753789,
+      "duration" : 12136
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.SignInTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.SignInTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "signIn"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Selenium Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Automationpractice Selenium Suite"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.SignInTest"
+  }, {
+    "name" : "host",
+    "value" : "travis-job-1d9134c7-326a-4434-9885-3c423b623358"
+  }, {
+    "name" : "thread",
+    "value" : "3810@travis-job-1d9134c7-326a-4434-9885-3c423b623358.TestNG-test=Automationpractice Selenium Suite-5(16)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "BrowserStack",
+    "url" : "https://automate.browserstack.com/builds/f535bea9b4c4f1050bccd80507ab9b175b959d8a/sessions/4b1e98f280185146fffd138fc45fcc7c5e902199"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 8
+      },
+      "items" : [ {
+        "uid" : "9bcc50fb07e936fe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547647497447,
+          "stop" : 1547647503485,
+          "duration" : 6038
+        }
+      }, {
+        "uid" : "b65a1727668f8929",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547646993346,
+          "stop" : 1547646998539,
+          "duration" : 5193
+        }
+      }, {
+        "uid" : "3445dc4ea738ec42",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547645698916,
+          "stop" : 1547645714352,
+          "duration" : 15436
+        }
+      }, {
+        "uid" : "d7f82583e95f07d1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547643745920,
+          "stop" : 1547643755910,
+          "duration" : 9990
+        }
+      }, {
+        "uid" : "523a670761beb68c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547594706350,
+          "stop" : 1547594719645,
+          "duration" : 13295
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "eed45ecf5b0adb97.json",
+  "parameterValues" : [ ]
+}

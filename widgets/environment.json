@@ -2,10 +2,10 @@
   "values" : [ "master" ],
   "name" : "Branch"
 }, {
-  "values" : [ "https://travis-ci.org/davidggevorgyan/automationpractice/builds/480394898" ],
+  "values" : [ "https://travis-ci.org/davidggevorgyan/automationpractice/builds/480397706" ],
   "name" : "Travis URL"
 }, {
-  "values" : [ "56" ],
+  "values" : [ "57" ],
   "name" : "Travis Run"
 }, {
   "values" : [ "chrome" ],
