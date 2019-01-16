@@ -1,9 +1,9 @@
 package setup;
 
-import org.apache.log4j.*;
+import org.apache.log4j.Logger;
 
-
-import java.io.*;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.Properties;
 
 
@@ -18,12 +18,14 @@ public final class FrameworkProperties {
 	static final String BROWSER = System.getProperty("selenium.browser", "chrome");
 	static final String HOST = System.getProperty("selenium.host", "localhost");
 	static final String HOST_URL = System.getProperty("selenium.hostURL", "http://localhost:4444/wd/hub");
+	private static final String TRAVIS_BRANCH = System.getProperty("travis.branch", "origin");
 
 	public static void writeProperties() {
 		Properties properties = new Properties();
 		properties.setProperty("Travis URL", TRAVIS_BUILD_WEB_URL);
 		properties.setProperty("Travis Run", TRAVIS_BUILD_NUMBER);
 		properties.setProperty("Browser", BROWSER);
+		properties.setProperty("Branch", TRAVIS_BRANCH);
 
 		try {
 			properties.store(new FileOutputStream("target/allure-results/environment.properties"), null);
