@@ -1,0 +1,131 @@
+{
+  "uid" : "5dd9fc634b95b864",
+  "name" : "buyItemsFromCart",
+  "fullName" : "tests.CheckOutTest.buyItemsFromCart",
+  "historyId" : "cadb92942155da0ba9cf573ba7b5fe68",
+  "time" : {
+    "start" : 1547643680739,
+    "stop" : 1547643721730,
+    "duration" : 40991
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1547643671215,
+      "stop" : 1547643680737,
+      "duration" : 9522
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1547643721731,
+      "stop" : 1547643736075,
+      "duration" : 14344
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.CheckOutTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.CheckOutTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "buyItemsFromCart"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Selenium Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Automationpractice Selenium Suite"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.CheckOutTest"
+  }, {
+    "name" : "host",
+    "value" : "travis-job-939a71e9-4079-4d8a-a4fc-58442c9b11d2"
+  }, {
+    "name" : "thread",
+    "value" : "3820@travis-job-939a71e9-4079-4d8a-a4fc-58442c9b11d2.TestNG-test=Automationpractice Selenium Suite-4(15)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "BrowserStack",
+    "url" : "https://automate.browserstack.com/builds/f535bea9b4c4f1050bccd80507ab9b175b959d8a/sessions/7bf2a1519ef55135d217698b68cf64fe76776421"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "69999a0aee4071a1",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547594618394,
+          "stop" : 1547594672672,
+          "duration" : 54278
+        }
+      }, {
+        "uid" : "900ec4a69bfe2b0e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547593581383,
+          "stop" : 1547593615584,
+          "duration" : 34201
+        }
+      }, {
+        "uid" : "a70ff33cfd2c61bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547593581383,
+          "stop" : 1547593615584,
+          "duration" : 34201
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "5dd9fc634b95b864.json",
+  "parameterValues" : [ ]
+}

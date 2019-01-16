@@ -1,8 +1,8 @@
 [ {
-  "values" : [ "https://travis-ci.org/davidggevorgyan/automationpractice/builds/480138672" ],
+  "values" : [ "https://travis-ci.org/davidggevorgyan/automationpractice/builds/480366382" ],
   "name" : "Travis URL"
 }, {
-  "values" : [ "51" ],
+  "values" : [ "52" ],
   "name" : "Travis Run"
 }, {
   "values" : [ "chrome" ],

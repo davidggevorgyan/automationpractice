@@ -1,0 +1,131 @@
+{
+  "uid" : "d7f82583e95f07d1",
+  "name" : "signIn",
+  "fullName" : "tests.SignInTest.signIn",
+  "historyId" : "f711985277a8624beb70125e6be172a7",
+  "time" : {
+    "start" : 1547643745920,
+    "stop" : 1547643755910,
+    "duration" : 9990
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1547643737409,
+      "stop" : 1547643745918,
+      "duration" : 8509
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1547643755911,
+      "stop" : 1547643767735,
+      "duration" : 11824
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.SignInTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.SignInTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "signIn"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Selenium Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Automationpractice Selenium Suite"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.SignInTest"
+  }, {
+    "name" : "host",
+    "value" : "travis-job-939a71e9-4079-4d8a-a4fc-58442c9b11d2"
+  }, {
+    "name" : "thread",
+    "value" : "3820@travis-job-939a71e9-4079-4d8a-a4fc-58442c9b11d2.TestNG-test=Automationpractice Selenium Suite-3(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "BrowserStack",
+    "url" : "https://automate.browserstack.com/builds/f535bea9b4c4f1050bccd80507ab9b175b959d8a/sessions/bb00ee0ae52848551c330a556ec1bf0cbce6e032"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "523a670761beb68c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547594706350,
+          "stop" : 1547594719645,
+          "duration" : 13295
+        }
+      }, {
+        "uid" : "46b9d7d0d83d353",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547593617276,
+          "stop" : 1547593626347,
+          "duration" : 9071
+        }
+      }, {
+        "uid" : "ad3ec22abd1ebe71",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547593617276,
+          "stop" : 1547593626347,
+          "duration" : 9071
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d7f82583e95f07d1.json",
+  "parameterValues" : [ ]
+}
