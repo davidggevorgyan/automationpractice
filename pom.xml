@@ -17,6 +17,7 @@
         <allure-maven.version>2.10.0</allure-maven.version>
         <allure-testng.version>2.9.0</allure-testng.version>
         <maven-surefire-plugin.version>3.0.0-M3</maven-surefire-plugin.version>
+        <slf4j-simple.version>1.7.18</slf4j-simple.version>
     </properties>
     <dependencies>
         <dependency>
@@ -40,6 +41,11 @@
             <artifactId>allure-testng</artifactId>
             <version>${allure-testng.version}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j-simple.version}</version>
         </dependency>
     </dependencies>
     <build>
