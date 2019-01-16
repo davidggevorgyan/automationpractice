@@ -1,0 +1,136 @@
+{
+  "uid" : "6d74f86f8397e7f7",
+  "name" : "checkOut",
+  "fullName" : "tests.CartHoverTest.checkOut",
+  "historyId" : "fe65c69b9495ec4041148763c4f31938",
+  "time" : {
+    "start" : 1547645734165,
+    "stop" : 1547645741343,
+    "duration" : 7178
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1547645727709,
+      "stop" : 1547645734162,
+      "duration" : 6453
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1547645741345,
+      "stop" : 1547645753055,
+      "duration" : 11710
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.CartHoverTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.CartHoverTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "checkOut"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Selenium Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Automationpractice Selenium Suite"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.CartHoverTest"
+  }, {
+    "name" : "host",
+    "value" : "travis-job-9700bb5c-1aac-4bc5-a786-2b415fcf2b91"
+  }, {
+    "name" : "thread",
+    "value" : "3810@travis-job-9700bb5c-1aac-4bc5-a786-2b415fcf2b91.TestNG-test=Automationpractice Selenium Suite-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 5,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "e78336f94c244366",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547643773821,
+          "stop" : 1547643802378,
+          "duration" : 28557
+        }
+      }, {
+        "uid" : "23df47fa455a623",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547594738745,
+          "stop" : 1547594768401,
+          "duration" : 29656
+        }
+      }, {
+        "uid" : "7c811a98fc37e3c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547593600705,
+          "stop" : 1547593629485,
+          "duration" : 28780
+        }
+      }, {
+        "uid" : "42c7a53130c1aadb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547593600705,
+          "stop" : 1547593629485,
+          "duration" : 28780
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6d74f86f8397e7f7.json",
+  "parameterValues" : [ ]
+}

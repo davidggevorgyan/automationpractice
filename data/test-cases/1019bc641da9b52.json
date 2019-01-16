@@ -1,0 +1,80 @@
+{
+  "uid" : "1019bc641da9b52",
+  "name" : "exampleOfDisabledFailingTest",
+  "fullName" : "tests.ItemTest.exampleOfDisabledFailingTest",
+  "historyId" : "1e245de9b926310d6364557d6a91658f",
+  "time" : {
+    "start" : 1547645618156,
+    "stop" : 1547645618160,
+    "duration" : 4
+  },
+  "status" : "unknown",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.ItemTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.ItemTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "exampleOfDisabledFailingTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Selenium Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Automationpractice Selenium Suite"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.ItemTest"
+  }, {
+    "name" : "host",
+    "value" : "travis-job-9700bb5c-1aac-4bc5-a786-2b415fcf2b91"
+  }, {
+    "name" : "thread",
+    "value" : "3810@travis-job-9700bb5c-1aac-4bc5-a786-2b415fcf2b91.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 2,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "9e0aefc0c635b4d8",
+        "status" : "unknown",
+        "time" : {
+          "start" : 1547643670969,
+          "stop" : 1547643670973,
+          "duration" : 4
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "1019bc641da9b52.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,93 @@
+{
+  "uid" : "991b76231129f854",
+  "name" : "createUpdateDeleteWishlist",
+  "fullName" : "tests.WishlistTest.createUpdateDeleteWishlist",
+  "historyId" : "3279c616d98e4f36f826fdb297ccbd63",
+  "time" : {
+    "start" : 1547645657888,
+    "stop" : 1547645713043,
+    "duration" : 55155
+  },
+  "status" : "skipped",
+  "statusMessage" : "The wishlist was not removed expected [true] but found [false]",
+  "statusTrace" : "java.lang.AssertionError: The wishlist was not removed expected [true] but found [false]\n\tat org.testng.Assert.fail(Assert.java:96)\n\tat org.testng.Assert.failNotEquals(Assert.java:776)\n\tat org.testng.Assert.assertTrue(Assert.java:44)\n\tat tests.WishlistTest.createUpdateDeleteWishlist(WishlistTest.java:30)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:583)\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\n",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1547645650438,
+      "stop" : 1547645657884,
+      "duration" : 7446
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1547645713051,
+      "stop" : 1547645724876,
+      "duration" : 11825
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.WishlistTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.WishlistTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "createUpdateDeleteWishlist"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Selenium Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Automationpractice Selenium Suite"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.WishlistTest"
+  }, {
+    "name" : "host",
+    "value" : "travis-job-9700bb5c-1aac-4bc5-a786-2b415fcf2b91"
+  }, {
+    "name" : "thread",
+    "value" : "3810@travis-job-9700bb5c-1aac-4bc5-a786-2b415fcf2b91.TestNG-test=Automationpractice Selenium Suite-3(14)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "991b76231129f854.json",
+  "parameterValues" : [ ]
+}
