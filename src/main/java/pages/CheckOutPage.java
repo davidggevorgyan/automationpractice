@@ -7,8 +7,8 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-import static setup.Properties.LOGIN;
-import static setup.Properties.PASSWORD;
+import static setup.FrameworkProperties.LOGIN;
+import static setup.FrameworkProperties.PASSWORD;
 
 public class CheckOutPage extends BasePage<CheckOutPage> {
 	@FindBy(css = "[href*='order&step=1']")

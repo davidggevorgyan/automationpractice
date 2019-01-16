@@ -8,8 +8,8 @@ import pages.WishlistPage;
 import static java.util.UUID.randomUUID;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
-import static setup.Properties.LOGIN;
-import static setup.Properties.PASSWORD;
+import static setup.FrameworkProperties.LOGIN;
+import static setup.FrameworkProperties.PASSWORD;
 
 public class WishlistTest extends BaseTest {
 	@Test
