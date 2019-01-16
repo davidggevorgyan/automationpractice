@@ -1,0 +1,147 @@
+{
+  "uid" : "e4e2df075d9404b2",
+  "name" : "signOut",
+  "fullName" : "tests.SignInTest.signOut",
+  "historyId" : "a875ce3db17f421a9326329aaab29f17",
+  "time" : {
+    "start" : 1547647511658,
+    "stop" : 1547647518140,
+    "duration" : 6482
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1547647505642,
+      "stop" : 1547647511656,
+      "duration" : 6014
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1547647518142,
+      "stop" : 1547647530044,
+      "duration" : 11902
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.SignInTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.SignInTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "signOut"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Selenium Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Automationpractice Selenium Suite"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.SignInTest"
+  }, {
+    "name" : "host",
+    "value" : "travis-job-18b30eae-e980-4223-86e6-580c4622735e"
+  }, {
+    "name" : "thread",
+    "value" : "3816@travis-job-18b30eae-e980-4223-86e6-580c4622735e.TestNG-test=Automationpractice Selenium Suite-1(12)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "BrowserStack",
+    "url" : "https://automate.browserstack.com/builds/f535bea9b4c4f1050bccd80507ab9b175b959d8a/sessions/7b06347df6e6116409f31219a6164333b1ea7281"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "88ef59e8582027ae",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547647015161,
+          "stop" : 1547647021240,
+          "duration" : 6079
+        }
+      }, {
+        "uid" : "5e54e11b4b2cd008",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547645711598,
+          "stop" : 1547645722836,
+          "duration" : 11238
+        }
+      }, {
+        "uid" : "fb41891581d0836",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547643768239,
+          "stop" : 1547643782635,
+          "duration" : 14396
+        }
+      }, {
+        "uid" : "f1c2024d041f96f5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547594743472,
+          "stop" : 1547594761751,
+          "duration" : 18279
+        }
+      }, {
+        "uid" : "6118cd874e4891e7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547593628597,
+          "stop" : 1547593641112,
+          "duration" : 12515
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "e4e2df075d9404b2.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,96 @@
+{
+  "uid" : "ef92f19b0807e4f1",
+  "name" : "exampleOfDisabledFailingTest",
+  "fullName" : "tests.ItemTest.exampleOfDisabledFailingTest",
+  "historyId" : "1e245de9b926310d6364557d6a91658f",
+  "time" : {
+    "start" : 1547647444654,
+    "stop" : 1547647444658,
+    "duration" : 4
+  },
+  "status" : "unknown",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.ItemTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.ItemTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "exampleOfDisabledFailingTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Selenium Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Automationpractice Selenium Suite"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.ItemTest"
+  }, {
+    "name" : "host",
+    "value" : "travis-job-18b30eae-e980-4223-86e6-580c4622735e"
+  }, {
+    "name" : "thread",
+    "value" : "3816@travis-job-18b30eae-e980-4223-86e6-580c4622735e.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 4,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "1dd263035c18073e",
+        "status" : "unknown",
+        "time" : {
+          "start" : 1547646948451,
+          "stop" : 1547646948456,
+          "duration" : 5
+        }
+      }, {
+        "uid" : "1019bc641da9b52",
+        "status" : "unknown",
+        "time" : {
+          "start" : 1547645618156,
+          "stop" : 1547645618160,
+          "duration" : 4
+        }
+      }, {
+        "uid" : "9e0aefc0c635b4d8",
+        "status" : "unknown",
+        "time" : {
+          "start" : 1547643670969,
+          "stop" : 1547643670973,
+          "duration" : 4
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ef92f19b0807e4f1.json",
+  "parameterValues" : [ ]
+}

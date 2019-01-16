@@ -1,11 +1,11 @@
 [ {
-  "values" : [ "master-allure-testng6" ],
+  "values" : [ "master" ],
   "name" : "Branch"
 }, {
-  "values" : [ "https://travis-ci.org/davidggevorgyan/automationpractice/builds/480391384" ],
+  "values" : [ "https://travis-ci.org/davidggevorgyan/automationpractice/builds/480394898" ],
   "name" : "Travis URL"
 }, {
-  "values" : [ "55" ],
+  "values" : [ "56" ],
   "name" : "Travis Run"
 }, {
   "values" : [ "chrome" ],
