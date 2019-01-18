@@ -8,49 +8,49 @@
         "name" : "tests.ItemTest",
         "children" : [ {
           "name" : "exampleOfDisabledFailingTest",
-          "uid" : "e42b2a7ff74280ff",
+          "uid" : "13befe0f6f675ad9",
           "parentUid" : "456b63a9ff72d5f92910740de0f2f519",
           "status" : "unknown",
           "time" : {
-            "start" : 1547647684201,
-            "stop" : 1547647684206,
+            "start" : 1547801661436,
+            "stop" : 1547801661441,
             "duration" : 5
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
-          "name" : "addItemToCart",
-          "uid" : "fbe9fa93b1a54a33",
+          "name" : "selectColor",
+          "uid" : "31137f66ccde89cd",
           "parentUid" : "456b63a9ff72d5f92910740de0f2f519",
           "status" : "passed",
           "time" : {
-            "start" : 1547647691218,
-            "stop" : 1547647698971,
-            "duration" : 7753
+            "start" : 1547801668847,
+            "stop" : 1547801675117,
+            "duration" : 6270
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
           "name" : "addSeveralItemsToCart",
-          "uid" : "96e54472554cf4b7",
+          "uid" : "c59ba13d0e59ffbd",
           "parentUid" : "456b63a9ff72d5f92910740de0f2f519",
           "status" : "passed",
           "time" : {
-            "start" : 1547647691299,
-            "stop" : 1547647705802,
-            "duration" : 14503
+            "start" : 1547801668966,
+            "stop" : 1547801680636,
+            "duration" : 11670
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
-          "name" : "selectColor",
-          "uid" : "cc909b2a1306092a",
+          "name" : "addItemToCart",
+          "uid" : "28361ec199052ed3",
           "parentUid" : "456b63a9ff72d5f92910740de0f2f519",
           "status" : "passed",
           "time" : {
-            "start" : 1547647691477,
-            "stop" : 1547647698646,
-            "duration" : 7169
+            "start" : 1547801669287,
+            "stop" : 1547801676421,
+            "duration" : 7134
           },
           "flaky" : false,
           "parameters" : [ ]
@@ -60,37 +60,37 @@
         "name" : "tests.CheckOutTest",
         "children" : [ {
           "name" : "buyItemsFromCart",
-          "uid" : "4f7c27ddaa397071",
+          "uid" : "834418fe804bc879",
           "parentUid" : "084676526cf8bd668342cb9452c2c188",
           "status" : "passed",
           "time" : {
-            "start" : 1547647691551,
-            "stop" : 1547647715625,
-            "duration" : 24074
+            "start" : 1547801668984,
+            "stop" : 1547801691121,
+            "duration" : 22137
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
           "name" : "changeQuantityInCart",
-          "uid" : "65a2312e7913656b",
+          "uid" : "5104deebc6f480b3",
           "parentUid" : "084676526cf8bd668342cb9452c2c188",
           "status" : "passed",
           "time" : {
-            "start" : 1547647691708,
-            "stop" : 1547647715810,
-            "duration" : 24102
+            "start" : 1547801669862,
+            "stop" : 1547801690639,
+            "duration" : 20777
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
           "name" : "removeLastItemFromCart",
-          "uid" : "7afab3c14d43cde7",
+          "uid" : "cd36e185492b9951",
           "parentUid" : "084676526cf8bd668342cb9452c2c188",
           "status" : "passed",
           "time" : {
-            "start" : 1547647717421,
-            "stop" : 1547647731904,
-            "duration" : 14483
+            "start" : 1547801698731,
+            "stop" : 1547801706556,
+            "duration" : 7825
           },
           "flaky" : false,
           "parameters" : [ ]
@@ -100,13 +100,13 @@
         "name" : "tests.WishlistTest",
         "children" : [ {
           "name" : "createUpdateDeleteWishlist",
-          "uid" : "7893ce2e62229e3",
+          "uid" : "9e295aa744947cfb",
           "parentUid" : "97d0bfdbb16cc3daf1d3350a1609e7be",
           "status" : "passed",
           "time" : {
-            "start" : 1547647716784,
-            "stop" : 1547647741316,
-            "duration" : 24532
+            "start" : 1547801696351,
+            "stop" : 1547801721988,
+            "duration" : 25637
           },
           "flaky" : false,
           "parameters" : [ ]
@@ -116,61 +116,61 @@
         "name" : "tests.SignInTest",
         "children" : [ {
           "name" : "forgotPassword",
-          "uid" : "7b418872bffc002f",
+          "uid" : "109e931ffbc20517",
           "parentUid" : "ac95499e65540a53695f06704cbe2554",
           "status" : "passed",
           "time" : {
-            "start" : 1547647728299,
-            "stop" : 1547647734463,
-            "duration" : 6164
+            "start" : 1547801697687,
+            "stop" : 1547801702956,
+            "duration" : 5269
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
           "name" : "forgotPasswordWithInvalidCredentials",
-          "uid" : "aae0c217b6a6e330",
+          "uid" : "43634daf8488908",
           "parentUid" : "ac95499e65540a53695f06704cbe2554",
           "status" : "passed",
           "time" : {
-            "start" : 1547647733284,
-            "stop" : 1547647740813,
-            "duration" : 7529
+            "start" : 1547801708480,
+            "stop" : 1547801713164,
+            "duration" : 4684
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
           "name" : "signIn",
-          "uid" : "eed45ecf5b0adb97",
+          "uid" : "f4442c341fe75ae",
           "parentUid" : "ac95499e65540a53695f06704cbe2554",
           "status" : "passed",
           "time" : {
-            "start" : 1547647735127,
-            "stop" : 1547647741652,
-            "duration" : 6525
+            "start" : 1547801710859,
+            "stop" : 1547801714876,
+            "duration" : 4017
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
           "name" : "signInWithInvalidCredentials",
-          "uid" : "1a4dc7388ad21c99",
+          "uid" : "e143cc403b94158b",
           "parentUid" : "ac95499e65540a53695f06704cbe2554",
           "status" : "passed",
           "time" : {
-            "start" : 1547647749602,
-            "stop" : 1547647753237,
-            "duration" : 3635
+            "start" : 1547801721074,
+            "stop" : 1547801724691,
+            "duration" : 3617
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
           "name" : "signOut",
-          "uid" : "64177acf874905a5",
+          "uid" : "45508b59caaf4697",
           "parentUid" : "ac95499e65540a53695f06704cbe2554",
           "status" : "passed",
           "time" : {
-            "start" : 1547647752479,
-            "stop" : 1547647759853,
-            "duration" : 7374
+            "start" : 1547801726935,
+            "stop" : 1547801736073,
+            "duration" : 9138
           },
           "flaky" : false,
           "parameters" : [ ]
@@ -179,38 +179,38 @@
       }, {
         "name" : "tests.CartHoverTest",
         "children" : [ {
-          "name" : "removeItemFromHover",
-          "uid" : "400baa0c7f1df11f",
+          "name" : "checkCountInHover",
+          "uid" : "272e861fe1cde80b",
           "parentUid" : "d1dc569611d34f99b19515451b0387e6",
           "status" : "passed",
           "time" : {
-            "start" : 1547647759603,
-            "stop" : 1547647767013,
-            "duration" : 7410
+            "start" : 1547801730436,
+            "stop" : 1547801736331,
+            "duration" : 5895
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
           "name" : "checkOut",
-          "uid" : "3a6423bdb43fa394",
+          "uid" : "225d1ef5a8bddda8",
           "parentUid" : "d1dc569611d34f99b19515451b0387e6",
           "status" : "passed",
           "time" : {
-            "start" : 1547647761062,
-            "stop" : 1547647768588,
-            "duration" : 7526
+            "start" : 1547801732194,
+            "stop" : 1547801740385,
+            "duration" : 8191
           },
           "flaky" : false,
           "parameters" : [ ]
         }, {
-          "name" : "checkCountInHover",
-          "uid" : "27e29cd3bef372d7",
+          "name" : "removeItemFromHover",
+          "uid" : "cd3cd4dfb98809b3",
           "parentUid" : "d1dc569611d34f99b19515451b0387e6",
           "status" : "passed",
           "time" : {
-            "start" : 1547647764353,
-            "stop" : 1547647769278,
-            "duration" : 4925
+            "start" : 1547801741918,
+            "stop" : 1547801750407,
+            "duration" : 8489
           },
           "flaky" : false,
           "parameters" : [ ]
