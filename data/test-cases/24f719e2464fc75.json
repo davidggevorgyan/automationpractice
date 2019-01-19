@@ -1,0 +1,147 @@
+{
+  "uid" : "24f719e2464fc75",
+  "name" : "changeQuantityInCart",
+  "fullName" : "tests.CheckOutTest.changeQuantityInCart",
+  "historyId" : "1fafbf9728951939f971864416a63a76",
+  "time" : {
+    "start" : 1547923263161,
+    "stop" : 1547923280016,
+    "duration" : 16855
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1547923256139,
+      "stop" : 1547923263147,
+      "duration" : 7008
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1547923280018,
+      "stop" : 1547923291736,
+      "duration" : 11718
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests.CheckOutTest"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.CheckOutTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "changeQuantityInCart"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Selenium Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Automationpractice Selenium Suite"
+  }, {
+    "name" : "subSuite",
+    "value" : "tests.CheckOutTest"
+  }, {
+    "name" : "host",
+    "value" : "travis-job-92523979-faa1-4c7e-8494-61e95155e81e"
+  }, {
+    "name" : "thread",
+    "value" : "3808@travis-job-92523979-faa1-4c7e-8494-61e95155e81e.TestNG-test=Automationpractice Selenium Suite-5(16)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "BrowserStack",
+    "url" : "https://automate.browserstack.com/builds/f535bea9b4c4f1050bccd80507ab9b175b959d8a/sessions/7b2a911bd162a37c26d05d9d8e5590fa46e32a10"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 10,
+        "unknown" : 0,
+        "total" : 10
+      },
+      "items" : [ {
+        "uid" : "5104deebc6f480b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547801669862,
+          "stop" : 1547801690639,
+          "duration" : 20777
+        }
+      }, {
+        "uid" : "65a2312e7913656b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547647691708,
+          "stop" : 1547647715810,
+          "duration" : 24102
+        }
+      }, {
+        "uid" : "e3d5e04003c33b33",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547647451968,
+          "stop" : 1547647476326,
+          "duration" : 24358
+        }
+      }, {
+        "uid" : "e11977840b0a6134",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547646956162,
+          "stop" : 1547646975716,
+          "duration" : 19554
+        }
+      }, {
+        "uid" : "45c5c34800adf609",
+        "status" : "passed",
+        "time" : {
+          "start" : 1547645625594,
+          "stop" : 1547645681181,
+          "duration" : 55587
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "24f719e2464fc75.json",
+  "parameterValues" : [ ]
+}
