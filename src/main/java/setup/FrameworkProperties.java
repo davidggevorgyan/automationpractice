@@ -1,14 +1,11 @@
 package setup;
 
-import org.apache.log4j.Logger;
-
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
 
 
 public final class FrameworkProperties {
-	private final static Logger logger = Logger.getLogger(FrameworkProperties.class);
 	public static final String BASE_URL = System.getProperty("selenium.baseURL", "http://automationpractice.com/");
 	public static final String LOGIN = System.getProperty("selenium.login", "d1@grr.la");
 	public static final String PASSWORD = System.getProperty("selenium.password", "d1@grr.la");
@@ -30,7 +27,8 @@ public final class FrameworkProperties {
 		try {
 			properties.store(new FileOutputStream("target/allure-results/environment.properties"), null);
 		} catch (IOException e) {
-			logger.error(e);
+			System.err.println("File opening failed");
+			e.printStackTrace();
 		}
 
 
