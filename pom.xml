@@ -16,7 +16,7 @@
         <allure-maven.version>2.10.0</allure-maven.version>
         <allure-testng.version>2.9.0</allure-testng.version>
         <maven-surefire-plugin.version>3.0.0-M3</maven-surefire-plugin.version>
-        <slf4j-simple.version>1.7.18</slf4j-simple.version>lo
+        <slf4j-simple.version>1.7.18</slf4j-simple.version>
     </properties>
     <dependencies>
         <dependency>
