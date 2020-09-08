@@ -1,6 +1,5 @@
 package setup;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -14,7 +13,6 @@ import static setup.FrameworkProperties.*;
 
 
 public class DriverBase {
-	private final static Logger logger = Logger.getLogger(DriverBase.class);
 	private final ThreadLocal<WebDriver> driverThread = new ThreadLocal<>();
 
 	public static DriverBase get() {
@@ -80,7 +78,8 @@ public class DriverBase {
 		try {
 			remoteDriver = new RemoteWebDriver(new URL(HOST_URL), capability);
 		} catch (MalformedURLException e) {
-			logger.error("Failed to initialize remote driver", e);
+			System.err.println("Failed to initialize remote driver:");
+			e.printStackTrace();
 		}
 
 		return remoteDriver;
